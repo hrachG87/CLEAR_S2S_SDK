@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AssessorParcelNumInfo")]
 public class AssessorParcelNumInfo
 {
@@ -28,5 +27,4 @@ public class AssessorParcelNumInfo
     [XmlElement("IRISFormattedAPN")]
     public List<string> IRISFormattedAPN { get; set; }
 
-}
 }

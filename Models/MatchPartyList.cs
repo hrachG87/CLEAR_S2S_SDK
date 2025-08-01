@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("MatchPartyList")]
 public class MatchPartyList
 {
@@ -16,5 +15,4 @@ public class MatchPartyList
     [XmlElement("AKAInfo")]
     public List<CourtDataAKAInfo> AKAInfo { get; set; }
 
-}
 }

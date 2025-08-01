@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessReportSections")]
 public class BusinessReportSections
 {
@@ -169,5 +168,4 @@ public class BusinessReportSections
     [XmlElement("NPISection")]
     public bool NPISection { get; set; }
 
-}
 }

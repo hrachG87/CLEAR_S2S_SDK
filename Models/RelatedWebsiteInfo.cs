@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RelatedWebsiteInfo")]
 public class RelatedWebsiteInfo
 {
@@ -28,5 +27,4 @@ public class RelatedWebsiteInfo
     [XmlElement("Tags")]
     public List<TagInfo> Tags { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("EmailAttributes")]
 public class EmailAttributes
 {
@@ -97,5 +96,4 @@ public class EmailAttributes
     [XmlElement("SPFRecord")]
     public string SPFRecord { get; set; }
 
-}
 }

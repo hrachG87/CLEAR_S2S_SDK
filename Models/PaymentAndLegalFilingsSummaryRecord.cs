@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PaymentAndLegalFilingsSummaryRecord")]
 public class PaymentAndLegalFilingsSummaryRecord
 {
@@ -82,5 +81,4 @@ public class PaymentAndLegalFilingsSummaryRecord
     [XmlElement("UCCFilings")]
     public int UCCFilings { get; set; }
 
-}
 }

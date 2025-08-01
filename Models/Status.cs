@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Status")]
 public class Status
 {
@@ -19,5 +18,4 @@ public class Status
     [XmlElement("Message")]
     public string Message { get; set; }
 
-}
 }

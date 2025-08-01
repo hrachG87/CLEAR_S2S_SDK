@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaSearchCriteria")]
 public class AdverseMediaSearchCriteria
 {
@@ -28,5 +27,4 @@ public class AdverseMediaSearchCriteria
     [XmlElement("Location")]
     public string Location { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RIPersonSearchSection")]
 public class RIPersonSearchSection
 {
@@ -19,5 +18,4 @@ public class RIPersonSearchSection
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
 
-}
 }

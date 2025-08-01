@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GlobalBeneficialOwnershipSearchRequest")]
 public class GlobalBeneficialOwnershipSearchRequest
 {
@@ -16,5 +15,4 @@ public class GlobalBeneficialOwnershipSearchRequest
     [XmlElement("Criteria")]
     public GlobalBeneficialOwnershipCriteria Criteria { get; set; }
 
-}
 }

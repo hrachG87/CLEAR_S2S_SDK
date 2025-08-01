@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WatercraftAddressCriteria")]
 public class WatercraftAddressCriteria
 {
@@ -34,5 +33,4 @@ public class WatercraftAddressCriteria
     [XmlElement("AddressType")]
     public string AddressType { get; set; }
 
-}
 }

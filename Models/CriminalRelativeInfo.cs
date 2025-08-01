@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CriminalRelativeInfo")]
 public class CriminalRelativeInfo
 {
@@ -19,5 +18,4 @@ public class CriminalRelativeInfo
     [XmlElement("TypeOfRelative")]
     public string TypeOfRelative { get; set; }
 
-}
 }

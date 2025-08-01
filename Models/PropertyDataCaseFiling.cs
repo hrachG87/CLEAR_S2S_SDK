@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PropertyDataCaseFiling")]
 public class PropertyDataCaseFiling
 {
@@ -13,5 +12,4 @@ public class PropertyDataCaseFiling
     [XmlElement("FileDate")]
     public string FileDate { get; set; }
 
-}
 }

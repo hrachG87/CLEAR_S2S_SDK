@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GlobalBeneficialOwnershipEntityDetailsPage")]
 public class GlobalBeneficialOwnershipEntityDetailsPage
 {
@@ -16,5 +15,4 @@ public class GlobalBeneficialOwnershipEntityDetailsPage
     [XmlElement("EntityDetails")]
     public GlobalBeneficialOwnershipEntityDetail EntityDetails { get; set; }
 
-}
 }

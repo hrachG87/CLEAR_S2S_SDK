@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("TableLayout")]
 public class TableLayout
 {
@@ -22,5 +21,4 @@ public class TableLayout
     [XmlElement("Header5")]
     public HeaderInfo Header5 { get; set; }
 
-}
 }

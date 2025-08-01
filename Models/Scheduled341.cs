@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Scheduled341")]
 public class Scheduled341
 {
@@ -19,5 +18,4 @@ public class Scheduled341
     [XmlElement("Scheduled341Time")]
     public string Scheduled341Time { get; set; }
 
-}
 }

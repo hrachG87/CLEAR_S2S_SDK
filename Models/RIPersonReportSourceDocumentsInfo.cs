@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RIPersonReportSourceDocumentsInfo")]
 public class RIPersonReportSourceDocumentsInfo
 {
@@ -160,5 +159,4 @@ public class RIPersonReportSourceDocumentsInfo
     [XmlElement("ccwlicenseRecord")]
     public List<CCWLicenseRecord> ccwlicenseRecord { get; set; }
 
-}
 }

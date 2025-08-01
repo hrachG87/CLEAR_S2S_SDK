@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonRiskFlagInfo")]
 public class PersonRiskFlagInfo
 {
@@ -19,5 +18,4 @@ public class PersonRiskFlagInfo
     [XmlElement("RelativesDocumentGuids")]
     public List<FlagsSearchSources> RelativesDocumentGuids { get; set; }
 
-}
 }

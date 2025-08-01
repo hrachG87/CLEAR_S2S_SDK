@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessReportCandidateRequest")]
 public class BusinessReportCandidateRequest
 {
@@ -16,5 +15,4 @@ public class BusinessReportCandidateRequest
     [XmlElement("Criteria")]
     public BusinessReportCandidateCriteriaContainer Criteria { get; set; }
 
-}
 }

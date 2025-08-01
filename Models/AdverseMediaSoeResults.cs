@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaSoeResults")]
 public class AdverseMediaSoeResults
 {
@@ -43,5 +42,4 @@ public class AdverseMediaSoeResults
     [XmlElement("RawAdditionalInfoList")]
     public RawAdditionalInfoList RawAdditionalInfoList { get; set; }
 
-}
 }

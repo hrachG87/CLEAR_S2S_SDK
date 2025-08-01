@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaMonitorDeleteSubjectsRequest")]
 public class AdverseMediaMonitorDeleteSubjectsRequest
 {
@@ -16,5 +15,4 @@ public class AdverseMediaMonitorDeleteSubjectsRequest
     [XmlElement("Criteria")]
     public AdverseMediaMonitorDeleteSubjectsUserCriteria Criteria { get; set; }
 
-}
 }

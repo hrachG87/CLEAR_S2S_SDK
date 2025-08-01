@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SanctionOverride")]
 public class SanctionOverride
 {
@@ -16,5 +15,4 @@ public class SanctionOverride
     [XmlElement("Exclude")]
     public bool Exclude { get; set; }
 
-}
 }

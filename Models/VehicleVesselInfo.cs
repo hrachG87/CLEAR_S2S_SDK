@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("VehicleVesselInfo")]
 public class VehicleVesselInfo
 {
@@ -136,5 +135,4 @@ public class VehicleVesselInfo
     [XmlElement("IMOVesselNumber")]
     public string IMOVesselNumber { get; set; }
 
-}
 }

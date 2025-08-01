@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CircuitCourtDocketRecord")]
 public class CircuitCourtDocketRecord
 {
@@ -40,5 +39,4 @@ public class CircuitCourtDocketRecord
     [XmlElement("DocketEntries")]
     public List<DocketEntries> DocketEntries { get; set; }
 
-}
 }

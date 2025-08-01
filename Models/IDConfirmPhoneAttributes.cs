@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("IDConfirmPhoneAttributes")]
 public class IDConfirmPhoneAttributes
 {
@@ -22,5 +21,4 @@ public class IDConfirmPhoneAttributes
     [XmlElement("VOIPFlag")]
     public VOIPFlagAttributes VOIPFlag { get; set; }
 
-}
 }

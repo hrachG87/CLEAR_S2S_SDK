@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ResultType")]
 public class ResultType
 {
@@ -13,5 +12,4 @@ public class ResultType
     [XmlElement("Number")]
     public string Number { get; set; }
 
-}
 }

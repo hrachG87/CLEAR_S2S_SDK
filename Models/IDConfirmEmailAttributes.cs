@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("IDConfirmEmailAttributes")]
 public class IDConfirmEmailAttributes
 {
@@ -25,5 +24,4 @@ public class IDConfirmEmailAttributes
     [XmlElement("EmailAttributeDetails")]
     public EmailAttributes EmailAttributeDetails { get; set; }
 
-}
 }

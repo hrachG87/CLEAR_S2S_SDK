@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SexOffensesV3")]
 public class SexOffensesV3
 {
@@ -70,5 +69,4 @@ public class SexOffensesV3
     [XmlElement("SORViolation")]
     public RiskFlagInfo SORViolation { get; set; }
 
-}
 }

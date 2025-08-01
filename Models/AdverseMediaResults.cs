@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaResults")]
 public class AdverseMediaResults
 {
@@ -43,5 +42,4 @@ public class AdverseMediaResults
     [XmlElement("FullTextAdverseTerms")]
     public AdverseTermsContainer FullTextAdverseTerms { get; set; }
 
-}
 }

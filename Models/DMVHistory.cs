@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DMVHistory")]
 public class DMVHistory
 {
@@ -16,5 +15,4 @@ public class DMVHistory
     [XmlElement("DMVInfo")]
     public DMVInfo DMVInfo { get; set; }
 
-}
 }

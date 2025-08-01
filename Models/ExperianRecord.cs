@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ExperianRecord")]
 public class ExperianRecord
 {
@@ -31,5 +30,4 @@ public class ExperianRecord
     [XmlElement("AKANameInfo")]
     public List<AKANameInfo> AKANameInfo { get; set; }
 
-}
 }

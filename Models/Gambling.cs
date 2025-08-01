@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Gambling")]
 public class Gambling
 {
@@ -67,5 +66,4 @@ public class Gambling
     [XmlElement("PlayingDiceGame")]
     public RiskFlagInfo PlayingDiceGame { get; set; }
 
-}
 }

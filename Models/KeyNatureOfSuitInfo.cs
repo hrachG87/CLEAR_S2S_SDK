@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("KeyNatureOfSuitInfo")]
 public class KeyNatureOfSuitInfo
 {
@@ -19,5 +18,4 @@ public class KeyNatureOfSuitInfo
     [XmlElement("NatureOfSuitCode")]
     public string NatureOfSuitCode { get; set; }
 
-}
 }

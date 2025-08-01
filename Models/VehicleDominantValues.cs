@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("VehicleDominantValues")]
 public class VehicleDominantValues
 {
@@ -22,5 +21,4 @@ public class VehicleDominantValues
     [XmlElement("OwnerName")]
     public string OwnerName { get; set; }
 
-}
 }

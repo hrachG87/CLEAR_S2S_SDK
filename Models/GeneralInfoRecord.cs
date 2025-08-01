@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GeneralInfoRecord")]
 public class GeneralInfoRecord
 {
@@ -52,5 +51,4 @@ public class GeneralInfoRecord
     [XmlElement("StockComp")]
     public string StockComp { get; set; }
 
-}
 }

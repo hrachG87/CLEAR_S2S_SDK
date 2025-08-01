@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("NewsSearchCriteria")]
 public class NewsSearchCriteria
 {
@@ -31,5 +30,4 @@ public class NewsSearchCriteria
     [XmlElement("GroupId")]
     public string GroupId { get; set; }
 
-}
 }

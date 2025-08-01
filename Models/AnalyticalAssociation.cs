@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AnalyticalAssociation")]
 public class AnalyticalAssociation
 {
@@ -13,5 +12,4 @@ public class AnalyticalAssociation
     [XmlElement("AssociationDocument")]
     public List<FlagsSearchSources> AssociationDocument { get; set; }
 
-}
 }

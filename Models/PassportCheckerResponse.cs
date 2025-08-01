@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PassportCheckerResponse")]
 public class PassportCheckerResponse
 {
@@ -13,5 +12,4 @@ public class PassportCheckerResponse
     [XmlElement("MRZ")]
     public MRZ MRZ { get; set; }
 
-}
 }

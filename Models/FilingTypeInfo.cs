@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FilingTypeInfo")]
 public class FilingTypeInfo
 {
@@ -25,5 +24,4 @@ public class FilingTypeInfo
     [XmlElement("TypeOfAction")]
     public List<string> TypeOfAction { get; set; }
 
-}
 }

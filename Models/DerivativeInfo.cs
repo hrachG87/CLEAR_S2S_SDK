@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DerivativeInfo")]
 public class DerivativeInfo
 {
@@ -55,5 +54,4 @@ public class DerivativeInfo
     [XmlElement("ItemOwnershipCategoryText")]
     public string ItemOwnershipCategoryText { get; set; }
 
-}
 }

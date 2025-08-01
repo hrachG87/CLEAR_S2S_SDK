@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CommentSource")]
 public class CommentSource
 {
@@ -28,5 +27,4 @@ public class CommentSource
     [XmlElement("SourceTitleDescription")]
     public string SourceTitleDescription { get; set; }
 
-}
 }

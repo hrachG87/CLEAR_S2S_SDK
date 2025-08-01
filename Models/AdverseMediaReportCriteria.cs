@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaReportCriteria")]
 public class AdverseMediaReportCriteria
 {
@@ -22,5 +21,4 @@ public class AdverseMediaReportCriteria
     [XmlElement("IncludeArticles")]
     public AdverseMdiaReportIncludeArticles IncludeArticles { get; set; }
 
-}
 }

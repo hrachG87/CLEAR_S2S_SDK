@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WatercraftSearchRequest")]
 public class WatercraftSearchRequest
 {
@@ -22,5 +21,4 @@ public class WatercraftSearchRequest
     [XmlElement("WatercraftDatasets")]
     public WatercraftDatasets WatercraftDatasets { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WatercraftDominantValues")]
 public class WatercraftDominantValues
 {
@@ -22,5 +21,4 @@ public class WatercraftDominantValues
     [XmlElement("RegistrationEffectiveDate")]
     public string RegistrationEffectiveDate { get; set; }
 
-}
 }

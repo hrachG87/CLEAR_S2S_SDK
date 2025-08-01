@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("MortgageBasicInfo")]
 public class MortgageBasicInfo
 {
@@ -16,5 +15,4 @@ public class MortgageBasicInfo
     [XmlElement("TypeOfMortgage")]
     public string TypeOfMortgage { get; set; }
 
-}
 }

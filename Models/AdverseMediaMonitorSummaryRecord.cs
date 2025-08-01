@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaMonitorSummaryRecord")]
 public class AdverseMediaMonitorSummaryRecord
 {
@@ -91,5 +90,4 @@ public class AdverseMediaMonitorSummaryRecord
     [XmlElement("Untagged")]
     public int Untagged { get; set; }
 
-}
 }

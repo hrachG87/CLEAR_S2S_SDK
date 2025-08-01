@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SICAndNAICSInfo")]
 public class SICAndNAICSInfo
 {
@@ -16,5 +15,4 @@ public class SICAndNAICSInfo
     [XmlElement("NAICSCodes")]
     public List<RiskFlagSICInfo> NAICSCodes { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WebAndSocialMediaPhoneInfo")]
 public class WebAndSocialMediaPhoneInfo
 {
@@ -22,5 +21,4 @@ public class WebAndSocialMediaPhoneInfo
     [XmlElement("LastSeenDate")]
     public string LastSeenDate { get; set; }
 
-}
 }

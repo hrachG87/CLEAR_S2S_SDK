@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AlertSubject")]
 public class AlertSubject
 {
@@ -25,5 +24,4 @@ public class AlertSubject
     [XmlElement("Location")]
     public string Location { get; set; }
 
-}
 }

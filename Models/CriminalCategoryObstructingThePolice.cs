@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CriminalCategoryObstructingThePolice")]
 public class CriminalCategoryObstructingThePolice
 {
@@ -76,5 +75,4 @@ public class CriminalCategoryObstructingThePolice
     [XmlElement("Felony Conviction")]
     public bool FelonyConviction { get; set; }
 
-}
 }

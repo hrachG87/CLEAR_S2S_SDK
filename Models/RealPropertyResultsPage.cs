@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RealPropertyResultsPage")]
 public class RealPropertyResultsPage
 {
@@ -19,5 +18,4 @@ public class RealPropertyResultsPage
     [XmlElement("ResultGroup")]
     public List<RealPropertySearchResultsGroup> ResultGroup { get; set; }
 
-}
 }

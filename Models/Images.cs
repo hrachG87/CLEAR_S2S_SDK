@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Images")]
 public class Images
 {
@@ -19,5 +18,4 @@ public class Images
     [XmlElement("ImageDate")]
     public string ImageDate { get; set; }
 
-}
 }

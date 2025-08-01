@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ITCRegisteredVessel")]
 public class ITCRegisteredVessel
 {
@@ -22,5 +21,4 @@ public class ITCRegisteredVessel
     [XmlElement("ITCRegisteredDepth")]
     public string ITCRegisteredDepth { get; set; }
 
-}
 }

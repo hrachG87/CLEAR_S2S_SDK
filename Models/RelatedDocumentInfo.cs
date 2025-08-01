@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RelatedDocumentInfo")]
 public class RelatedDocumentInfo
 {
@@ -13,5 +12,4 @@ public class RelatedDocumentInfo
     [XmlElement("EntityId")]
     public List<string> EntityId { get; set; }
 
-}
 }

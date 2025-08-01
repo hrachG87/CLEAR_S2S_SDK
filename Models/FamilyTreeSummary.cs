@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FamilyTreeSummary")]
 public class FamilyTreeSummary
 {
@@ -19,5 +18,4 @@ public class FamilyTreeSummary
     [XmlElement("Branches")]
     public string Branches { get; set; }
 
-}
 }

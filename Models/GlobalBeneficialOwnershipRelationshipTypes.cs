@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GlobalBeneficialOwnershipRelationshipTypes")]
 public class GlobalBeneficialOwnershipRelationshipTypes
 {
@@ -76,5 +75,4 @@ public class GlobalBeneficialOwnershipRelationshipTypes
     [XmlElement("ShipperReceiver")]
     public bool ShipperReceiver { get; set; }
 
-}
 }

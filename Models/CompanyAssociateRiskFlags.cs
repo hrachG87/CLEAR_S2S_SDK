@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CompanyAssociateRiskFlags")]
 public class CompanyAssociateRiskFlags
 {
@@ -61,5 +60,4 @@ public class CompanyAssociateRiskFlags
     [XmlElement("POBoxAddress")]
     public bool POBoxAddress { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PornographyObsceneMaterial")]
 public class PornographyObsceneMaterial
 {
@@ -34,5 +33,4 @@ public class PornographyObsceneMaterial
     [XmlElement("Obscenity")]
     public RiskFlagInfo Obscenity { get; set; }
 
-}
 }

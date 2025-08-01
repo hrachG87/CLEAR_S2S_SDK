@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FundamentalRatiosRecord")]
 public class FundamentalRatiosRecord
 {
@@ -34,5 +33,4 @@ public class FundamentalRatiosRecord
     [XmlElement("Source")]
     public string Source { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FictitiousBusinessRecord")]
 public class FictitiousBusinessRecord
 {
@@ -31,5 +30,4 @@ public class FictitiousBusinessRecord
     [XmlElement("FBNVendorStmt")]
     public List<FBNVendorStmt> FBNVendorStmt { get; set; }
 
-}
 }

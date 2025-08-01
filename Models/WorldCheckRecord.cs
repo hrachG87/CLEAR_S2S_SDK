@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WorldCheckRecord")]
 public class WorldCheckRecord
 {
@@ -64,5 +63,4 @@ public class WorldCheckRecord
     [XmlElement("SourceDocumentGuid")]
     public string SourceDocumentGuid { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("HistoricalAddress")]
 public class HistoricalAddress
 {
@@ -16,5 +15,4 @@ public class HistoricalAddress
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
 
-}
 }

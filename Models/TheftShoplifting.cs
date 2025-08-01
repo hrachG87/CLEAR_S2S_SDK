@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("TheftShoplifting")]
 public class TheftShoplifting
 {
@@ -85,5 +84,4 @@ public class TheftShoplifting
     [XmlElement("ComputerDataSoftwareTheft")]
     public RiskFlagInfo ComputerDataSoftwareTheft { get; set; }
 
-}
 }

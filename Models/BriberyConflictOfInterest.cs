@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BriberyConflictOfInterest")]
 public class BriberyConflictOfInterest
 {
@@ -49,5 +48,4 @@ public class BriberyConflictOfInterest
     [XmlElement("ConflictOfInterest")]
     public RiskFlagInfo ConflictOfInterest { get; set; }
 
-}
 }

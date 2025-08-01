@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RiskInformBusinessReportSectionSelectors")]
 public class RiskInformBusinessReportSectionSelectors
 {
@@ -67,5 +66,4 @@ public class RiskInformBusinessReportSectionSelectors
     [XmlElement("NoMatchSections")]
     public bool NoMatchSections { get; set; }
 
-}
 }

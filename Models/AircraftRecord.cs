@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AircraftRecord")]
 public class AircraftRecord
 {
@@ -88,5 +87,4 @@ public class AircraftRecord
     [XmlElement("SourceDocumentGuid")]
     public string SourceDocumentGuid { get; set; }
 
-}
 }

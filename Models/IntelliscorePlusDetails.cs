@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("IntelliscorePlusDetails")]
 public class IntelliscorePlusDetails
 {
@@ -16,5 +15,4 @@ public class IntelliscorePlusDetails
     [XmlElement("CreditRiskScoreDetails")]
     public CreditRiskScoreDetails CreditRiskScoreDetails { get; set; }
 
-}
 }

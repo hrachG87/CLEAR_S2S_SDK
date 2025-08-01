@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DisconnectedFlagAttributes")]
 public class DisconnectedFlagAttributes
 {
@@ -16,5 +15,4 @@ public class DisconnectedFlagAttributes
     [XmlElement("Value")]
     public string Value { get; set; }
 
-}
 }

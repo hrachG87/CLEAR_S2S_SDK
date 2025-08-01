@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("UndocumentedImmigrantInfo")]
 public class UndocumentedImmigrantInfo
 {
@@ -13,5 +12,4 @@ public class UndocumentedImmigrantInfo
     [XmlElement("UndocumentedImmigrantID")]
     public string UndocumentedImmigrantID { get; set; }
 
-}
 }

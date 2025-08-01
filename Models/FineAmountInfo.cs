@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FineAmountInfo")]
 public class FineAmountInfo
 {
@@ -28,5 +27,4 @@ public class FineAmountInfo
     [XmlElement("StayedFine")]
     public string StayedFine { get; set; }
 
-}
 }

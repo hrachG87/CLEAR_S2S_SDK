@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Complaint")]
 public class Complaint
 {
@@ -19,5 +18,4 @@ public class Complaint
     [XmlElement("disposition")]
     public CaseDisposition disposition { get; set; }
 
-}
 }

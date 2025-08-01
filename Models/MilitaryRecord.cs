@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("MilitaryRecord")]
 public class MilitaryRecord
 {
@@ -64,5 +63,4 @@ public class MilitaryRecord
     [XmlElement("Source")]
     public string Source { get; set; }
 
-}
 }

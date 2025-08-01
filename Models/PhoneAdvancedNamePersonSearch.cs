@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PhoneAdvancedNamePersonSearch")]
 public class PhoneAdvancedNamePersonSearch
 {
@@ -22,5 +21,4 @@ public class PhoneAdvancedNamePersonSearch
     [XmlElement("FirstNameExactMatchOption")]
     public bool FirstNameExactMatchOption { get; set; }
 
-}
 }

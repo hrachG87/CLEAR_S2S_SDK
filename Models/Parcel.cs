@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Parcel")]
 public class Parcel
 {
@@ -34,5 +33,4 @@ public class Parcel
     [XmlElement("PropertyType")]
     public string PropertyType { get; set; }
 
-}
 }

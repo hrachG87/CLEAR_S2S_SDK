@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WebAnalyticsNameInfo")]
 public class WebAnalyticsNameInfo
 {
@@ -16,5 +15,4 @@ public class WebAnalyticsNameInfo
     [XmlElement("LastName")]
     public string LastName { get; set; }
 
-}
 }

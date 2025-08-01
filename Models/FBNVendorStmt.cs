@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FBNVendorStmt")]
 public class FBNVendorStmt
 {
@@ -22,5 +21,4 @@ public class FBNVendorStmt
     [XmlElement("WithdrawnDate")]
     public List<string> WithdrawnDate { get; set; }
 
-}
 }

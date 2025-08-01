@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WebAndSocialMediaDetails")]
 public class WebAndSocialMediaDetails
 {
@@ -55,5 +54,4 @@ public class WebAndSocialMediaDetails
     [XmlElement("SocialMediaInfo")]
     public List<SocialMediaInfo> SocialMediaInfo { get; set; }
 
-}
 }

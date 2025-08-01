@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PhoneRecord")]
 public class PhoneRecord
 {
@@ -52,5 +51,4 @@ public class PhoneRecord
     [XmlElement("SourceDocumentGuid")]
     public string SourceDocumentGuid { get; set; }
 
-}
 }

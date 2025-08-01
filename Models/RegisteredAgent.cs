@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RegisteredAgent")]
 public class RegisteredAgent
 {
@@ -13,5 +12,4 @@ public class RegisteredAgent
     [XmlElement("AgentAddress")]
     public CommonDataAddress AgentAddress { get; set; }
 
-}
 }

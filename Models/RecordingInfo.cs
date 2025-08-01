@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RecordingInfo")]
 public class RecordingInfo
 {
@@ -28,5 +27,4 @@ public class RecordingInfo
     [XmlElement("TypeOfDocument")]
     public string TypeOfDocument { get; set; }
 
-}
 }

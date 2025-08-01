@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CompanyReportFlagInfo")]
 public class CompanyReportFlagInfo
 {
@@ -25,5 +24,4 @@ public class CompanyReportFlagInfo
     [XmlElement("OfficerTitle")]
     public string OfficerTitle { get; set; }
 
-}
 }

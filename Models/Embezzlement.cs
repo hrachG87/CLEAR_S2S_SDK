@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Embezzlement")]
 public class Embezzlement
 {
@@ -25,5 +24,4 @@ public class Embezzlement
     [XmlElement("EmbezzlementFlag")]
     public RiskFlagInfo EmbezzlementFlag { get; set; }
 
-}
 }

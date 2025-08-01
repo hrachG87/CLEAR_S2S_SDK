@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PermitInfo")]
 public class PermitInfo
 {
@@ -28,5 +27,4 @@ public class PermitInfo
     [XmlElement("TypeOfPermit")]
     public List<string> TypeOfPermit { get; set; }
 
-}
 }

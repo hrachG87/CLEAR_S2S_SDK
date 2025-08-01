@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaMonitorReportSectionDetails")]
 public class AdverseMediaMonitorReportSectionDetails
 {
@@ -112,5 +111,4 @@ public class AdverseMediaMonitorReportSectionDetails
     [XmlElement("FcraSection")]
     public FcraSection FcraSection { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("TaxPropertyInfo")]
 public class TaxPropertyInfo
 {
@@ -64,5 +63,4 @@ public class TaxPropertyInfo
     [XmlElement("RealEstateAcreageText")]
     public string RealEstateAcreageText { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ObligationInfo")]
 public class ObligationInfo
 {
@@ -19,5 +18,4 @@ public class ObligationInfo
     [XmlElement("TotalObligation")]
     public string TotalObligation { get; set; }
 
-}
 }

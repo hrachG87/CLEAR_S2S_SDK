@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonQuickAnalysisFlagResponseDetail")]
 public class PersonQuickAnalysisFlagResponseDetail
 {
@@ -13,5 +12,4 @@ public class PersonQuickAnalysisFlagResponseDetail
     [XmlElement("PersonRiskFlagsWithDocguids")]
     public PersonRiskFlagsWithDocguids PersonRiskFlagsWithDocguids { get; set; }
 
-}
 }

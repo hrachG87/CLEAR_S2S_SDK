@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaResultGroup")]
 public class AdverseMediaResultGroup
 {
@@ -16,5 +15,4 @@ public class AdverseMediaResultGroup
     [XmlElement("RecordDetails")]
     public AdverseMediaRecordDetails RecordDetails { get; set; }
 
-}
 }

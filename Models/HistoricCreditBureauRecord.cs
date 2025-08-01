@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("HistoricCreditBureauRecord")]
 public class HistoricCreditBureauRecord
 {
@@ -37,5 +36,4 @@ public class HistoricCreditBureauRecord
     [XmlElement("SSNInfo")]
     public SSNInfo SSNInfo { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DECorpReportRequest")]
 public class DECorpReportRequest
 {
@@ -16,5 +15,4 @@ public class DECorpReportRequest
     [XmlElement("Criteria")]
     public DECorpReportCriteriaContainer Criteria { get; set; }
 
-}
 }

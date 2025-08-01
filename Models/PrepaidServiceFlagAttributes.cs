@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PrepaidServiceFlagAttributes")]
 public class PrepaidServiceFlagAttributes
 {
@@ -16,5 +15,4 @@ public class PrepaidServiceFlagAttributes
     [XmlElement("Value")]
     public string Value { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("EidvBusinessServiceError")]
 public class EidvBusinessServiceError
 {
@@ -13,5 +12,4 @@ public class EidvBusinessServiceError
     [XmlElement("ErrorMsg")]
     public string ErrorMsg { get; set; }
 
-}
 }

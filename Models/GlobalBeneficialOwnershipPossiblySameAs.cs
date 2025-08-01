@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GlobalBeneficialOwnershipPossiblySameAs")]
 public class GlobalBeneficialOwnershipPossiblySameAs
 {
@@ -28,5 +27,4 @@ public class GlobalBeneficialOwnershipPossiblySameAs
     [XmlElement("DUNSNumber")]
     public string DUNSNumber { get; set; }
 
-}
 }

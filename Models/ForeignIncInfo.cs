@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ForeignIncInfo")]
 public class ForeignIncInfo
 {
@@ -19,5 +18,4 @@ public class ForeignIncInfo
     [XmlElement("OriginalState")]
     public string OriginalState { get; set; }
 
-}
 }

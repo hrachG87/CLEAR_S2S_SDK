@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DECorpSectionResults")]
 public class DECorpSectionResults
 {
@@ -22,5 +21,4 @@ public class DECorpSectionResults
     [XmlElement("CLEARReportDescription")]
     public string CLEARReportDescription { get; set; }
 
-}
 }

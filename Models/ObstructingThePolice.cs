@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ObstructingThePolice")]
 public class ObstructingThePolice
 {
@@ -64,5 +63,4 @@ public class ObstructingThePolice
     [XmlElement("InterceptPoliceRadio")]
     public RiskFlagInfo InterceptPoliceRadio { get; set; }
 
-}
 }

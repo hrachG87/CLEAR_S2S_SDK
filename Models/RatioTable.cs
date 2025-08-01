@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RatioTable")]
 public class RatioTable
 {
@@ -28,5 +27,4 @@ public class RatioTable
     [XmlElement("SalesNetWorkingCapitol")]
     public string SalesNetWorkingCapitol { get; set; }
 
-}
 }

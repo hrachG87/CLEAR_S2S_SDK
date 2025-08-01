@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PhoneResultsPage")]
 public class PhoneResultsPage
 {
@@ -19,5 +18,4 @@ public class PhoneResultsPage
     [XmlElement("ResultGroup")]
     public List<PhoneSearchResultsGroup> ResultGroup { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DocumentRetrievalCriteria")]
 public class DocumentRetrievalCriteria
 {
@@ -19,5 +18,4 @@ public class DocumentRetrievalCriteria
     [XmlElement("IncludeIncarcerationRecords")]
     public bool IncludeIncarcerationRecords { get; set; }
 
-}
 }

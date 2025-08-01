@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CompanyReportLienJudgmentSection")]
 public class CompanyReportLienJudgmentSection
 {
@@ -16,5 +15,4 @@ public class CompanyReportLienJudgmentSection
     [XmlElement("LienJudgeMultipleRecord")]
     public List<LienJudgeMultipleRecord> LienJudgeMultipleRecord { get; set; }
 
-}
 }

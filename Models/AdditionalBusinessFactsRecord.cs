@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdditionalBusinessFactsRecord")]
 public class AdditionalBusinessFactsRecord
 {
@@ -34,5 +33,4 @@ public class AdditionalBusinessFactsRecord
     [XmlElement("Competitors")]
     public Competitors Competitors { get; set; }
 
-}
 }

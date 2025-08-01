@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("LowerDistrictCourtInfo")]
 public class LowerDistrictCourtInfo
 {
@@ -61,5 +60,4 @@ public class LowerDistrictCourtInfo
     [XmlElement("Jurisdiction")]
     public string Jurisdiction { get; set; }
 
-}
 }

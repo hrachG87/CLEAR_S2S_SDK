@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CodeViolation")]
 public class CodeViolation
 {
@@ -13,5 +12,4 @@ public class CodeViolation
     [XmlElement("ZoningCodeViolation")]
     public RiskFlagInfo ZoningCodeViolation { get; set; }
 
-}
 }

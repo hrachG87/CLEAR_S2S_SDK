@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonDocumentCriteria")]
 public class PersonDocumentCriteria
 {
@@ -34,5 +33,4 @@ public class PersonDocumentCriteria
     [XmlElement("NPINumber")]
     public string NPINumber { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("EIDVBusinessSearchResult")]
 public class EIDVBusinessSearchResult
 {
@@ -22,5 +21,4 @@ public class EIDVBusinessSearchResult
     [XmlElement("EIDVBusinessSearchRequest")]
     public EIDVBusinessSearchRequest EIDVBusinessSearchRequest { get; set; }
 
-}
 }

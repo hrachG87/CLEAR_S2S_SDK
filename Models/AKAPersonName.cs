@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AKAPersonName")]
 public class AKAPersonName
 {
@@ -16,5 +15,4 @@ public class AKAPersonName
     [XmlElement("LastName")]
     public string LastName { get; set; }
 
-}
 }

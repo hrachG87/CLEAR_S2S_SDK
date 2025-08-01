@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessEmail")]
 public class BusinessEmail
 {
@@ -16,5 +15,4 @@ public class BusinessEmail
     [XmlElement("EmailDomain")]
     public string EmailDomain { get; set; }
 
-}
 }

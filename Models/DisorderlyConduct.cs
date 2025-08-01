@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DisorderlyConduct")]
 public class DisorderlyConduct
 {
@@ -28,5 +27,4 @@ public class DisorderlyConduct
     [XmlElement("DisorderlyConductRemarks")]
     public RiskFlagInfo DisorderlyConductRemarks { get; set; }
 
-}
 }

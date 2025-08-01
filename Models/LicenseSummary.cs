@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("LicenseSummary")]
 public class LicenseSummary
 {
@@ -16,5 +15,4 @@ public class LicenseSummary
     [XmlElement("HealthcareLicense")]
     public List<PersonSummaryInfo> HealthcareLicense { get; set; }
 
-}
 }

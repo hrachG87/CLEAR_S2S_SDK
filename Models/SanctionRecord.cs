@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SanctionRecord")]
 public class SanctionRecord
 {
@@ -46,5 +45,4 @@ public class SanctionRecord
     [XmlElement("RawAdditionalInfoList")]
     public RawAdditionalInfoList RawAdditionalInfoList { get; set; }
 
-}
 }

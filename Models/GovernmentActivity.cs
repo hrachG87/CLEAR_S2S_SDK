@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GovernmentActivity")]
 public class GovernmentActivity
 {
@@ -22,5 +21,4 @@ public class GovernmentActivity
     [XmlElement("Grantee")]
     public string Grantee { get; set; }
 
-}
 }

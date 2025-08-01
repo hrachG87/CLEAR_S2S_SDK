@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SecretService")]
 public class SecretService
 {
@@ -19,5 +18,4 @@ public class SecretService
     [XmlElement("ViolationOfNSR")]
     public RiskFlagInfo ViolationOfNSR { get; set; }
 
-}
 }

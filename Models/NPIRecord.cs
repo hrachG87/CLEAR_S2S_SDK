@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("NPIRecord")]
 public class NPIRecord
 {
@@ -73,5 +72,4 @@ public class NPIRecord
     [XmlElement("NPIUpdateDate")]
     public string NPIUpdateDate { get; set; }
 
-}
 }

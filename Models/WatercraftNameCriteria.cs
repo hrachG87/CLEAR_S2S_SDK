@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WatercraftNameCriteria")]
 public class WatercraftNameCriteria
 {
@@ -25,5 +24,4 @@ public class WatercraftNameCriteria
     [XmlElement("PersonRole")]
     public string PersonRole { get; set; }
 
-}
 }

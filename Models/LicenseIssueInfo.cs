@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("LicenseIssueInfo")]
 public class LicenseIssueInfo
 {
@@ -19,5 +18,4 @@ public class LicenseIssueInfo
     [XmlElement("PreviousDriverLicense")]
     public List<DriverLicenseInfo> PreviousDriverLicense { get; set; }
 
-}
 }

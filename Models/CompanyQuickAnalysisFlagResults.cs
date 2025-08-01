@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CompanyQuickAnalysisFlagResults")]
 public class CompanyQuickAnalysisFlagResults
 {
@@ -16,5 +15,4 @@ public class CompanyQuickAnalysisFlagResults
     [XmlElement("GroupCount")]
     public int GroupCount { get; set; }
 
-}
 }

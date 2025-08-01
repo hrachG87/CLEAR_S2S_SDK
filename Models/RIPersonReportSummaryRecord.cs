@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RIPersonReportSummaryRecord")]
 public class RIPersonReportSummaryRecord
 {
@@ -16,5 +15,4 @@ public class RIPersonReportSummaryRecord
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WorldCheckSearchResultsGroup")]
 public class WorldCheckSearchResultsGroup
 {
@@ -22,5 +21,4 @@ public class WorldCheckSearchResultsGroup
     [XmlElement("RecordDetails")]
     public WorldCheckRecordDetails RecordDetails { get; set; }
 
-}
 }

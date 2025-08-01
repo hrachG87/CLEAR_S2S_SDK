@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ParoleHearing")]
 public class ParoleHearing
 {
@@ -22,5 +21,4 @@ public class ParoleHearing
     [XmlElement("ParoleBoardAction")]
     public string ParoleBoardAction { get; set; }
 
-}
 }

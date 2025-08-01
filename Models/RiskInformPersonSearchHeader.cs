@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RiskInformPersonSearchHeader")]
 public class RiskInformPersonSearchHeader
 {
@@ -61,5 +60,4 @@ public class RiskInformPersonSearchHeader
     [XmlElement("RealTimeIncarcerationRecords")]
     public RIPersonSearchHeaderDetails RealTimeIncarcerationRecords { get; set; }
 
-}
 }

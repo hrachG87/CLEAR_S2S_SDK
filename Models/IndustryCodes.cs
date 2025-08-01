@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("IndustryCodes")]
 public class IndustryCodes
 {
@@ -13,5 +12,4 @@ public class IndustryCodes
     [XmlElement("NAICSCode")]
     public List<string> NAICSCode { get; set; }
 
-}
 }

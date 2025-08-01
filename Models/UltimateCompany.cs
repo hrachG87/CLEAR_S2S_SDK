@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("UltimateCompany")]
 public class UltimateCompany
 {
@@ -16,5 +15,4 @@ public class UltimateCompany
     [XmlElement("UltimateCompanyAddress")]
     public CommonDataAddress UltimateCompanyAddress { get; set; }
 
-}
 }

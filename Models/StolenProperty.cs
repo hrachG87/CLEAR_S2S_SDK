@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("StolenProperty")]
 public class StolenProperty
 {
@@ -28,5 +27,4 @@ public class StolenProperty
     [XmlElement("DealingInStolenProperty")]
     public RiskFlagInfo DealingInStolenProperty { get; set; }
 
-}
 }

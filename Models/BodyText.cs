@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BodyText")]
 public class BodyText
 {
@@ -13,5 +12,4 @@ public class BodyText
     [XmlElement("SectionText")]
     public string SectionText { get; set; }
 
-}
 }

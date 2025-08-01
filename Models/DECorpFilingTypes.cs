@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DECorpFilingTypes")]
 public class DECorpFilingTypes
 {
@@ -16,5 +15,4 @@ public class DECorpFilingTypes
     [XmlElement("PreviousCompanyNames")]
     public bool PreviousCompanyNames { get; set; }
 
-}
 }

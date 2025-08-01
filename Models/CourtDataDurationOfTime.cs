@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CourtDataDurationOfTime")]
 public class CourtDataDurationOfTime
 {
@@ -19,5 +18,4 @@ public class CourtDataDurationOfTime
     [XmlElement("NumberOfYears")]
     public string NumberOfYears { get; set; }
 
-}
 }

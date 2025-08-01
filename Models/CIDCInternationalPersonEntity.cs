@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CIDCInternationalPersonEntity")]
 public class CIDCInternationalPersonEntity
 {
@@ -22,5 +21,4 @@ public class CIDCInternationalPersonEntity
     [XmlElement("SearchRecords")]
     public CIDCInternationalSearchRecords SearchRecords { get; set; }
 
-}
 }

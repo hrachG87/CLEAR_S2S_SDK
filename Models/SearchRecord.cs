@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SearchRecord")]
 public class SearchRecord
 {
@@ -64,5 +63,4 @@ public class SearchRecord
     [XmlElement("NPINumber")]
     public EidvBusinessSearchMatchTypeField NPINumber { get; set; }
 
-}
 }

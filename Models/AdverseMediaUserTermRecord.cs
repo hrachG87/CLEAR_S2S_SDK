@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaUserTermRecord")]
 public class AdverseMediaUserTermRecord
 {
@@ -49,5 +48,4 @@ public class AdverseMediaUserTermRecord
     [XmlElement("SOESummarySection")]
     public string SOESummarySection { get; set; }
 
-}
 }

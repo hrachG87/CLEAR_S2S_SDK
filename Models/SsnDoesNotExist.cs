@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SsnDoesNotExist")]
 public class SsnDoesNotExist
 {
@@ -16,5 +15,4 @@ public class SsnDoesNotExist
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
 
-}
 }

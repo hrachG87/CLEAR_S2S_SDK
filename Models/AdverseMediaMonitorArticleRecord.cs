@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaMonitorArticleRecord")]
 public class AdverseMediaMonitorArticleRecord
 {
@@ -52,5 +51,4 @@ public class AdverseMediaMonitorArticleRecord
     [XmlElement("UserReference")]
     public string UserReference { get; set; }
 
-}
 }

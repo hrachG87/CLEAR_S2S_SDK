@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ArticleDetails")]
 public class ArticleDetails
 {
@@ -40,5 +39,4 @@ public class ArticleDetails
     [XmlElement("FullTextOriginalLanguage")]
     public string FullTextOriginalLanguage { get; set; }
 
-}
 }

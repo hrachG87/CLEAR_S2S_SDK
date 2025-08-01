@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CompanyDetailsStructure")]
 public class CompanyDetailsStructure
 {
@@ -55,5 +54,4 @@ public class CompanyDetailsStructure
     [XmlElement("BusinessListedAsOwnerOfficerOrDirector")]
     public BusinessRiskFlagInfo BusinessListedAsOwnerOfficerOrDirector { get; set; }
 
-}
 }

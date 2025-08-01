@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RIPersonReportScoreRecord")]
 public class RIPersonReportScoreRecord
 {
@@ -31,5 +30,4 @@ public class RIPersonReportScoreRecord
     [XmlElement("sections")]
     public RIPersonSearchSections sections { get; set; }
 
-}
 }

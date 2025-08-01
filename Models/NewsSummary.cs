@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("NewsSummary")]
 public class NewsSummary
 {
@@ -19,5 +18,4 @@ public class NewsSummary
     [XmlElement("ArticleSnippet")]
     public ArticleSnippet ArticleSnippet { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("MRZ")]
 public class MRZ
 {
@@ -13,5 +12,4 @@ public class MRZ
     [XmlElement("LowerLine")]
     public string LowerLine { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessNameRecord")]
 public class BusinessNameRecord
 {
@@ -40,5 +39,4 @@ public class BusinessNameRecord
     [XmlElement("CorporateLinkageType")]
     public string CorporateLinkageType { get; set; }
 
-}
 }

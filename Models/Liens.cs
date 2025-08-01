@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Liens")]
 public class Liens
 {
@@ -34,5 +33,4 @@ public class Liens
     [XmlElement("LiensTotalAmount")]
     public RiskFlagInfo LiensTotalAmount { get; set; }
 
-}
 }

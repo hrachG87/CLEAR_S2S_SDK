@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("IncomeInfo")]
 public class IncomeInfo
 {
@@ -16,5 +15,4 @@ public class IncomeInfo
     [XmlElement("IncomeNet")]
     public string IncomeNet { get; set; }
 
-}
 }

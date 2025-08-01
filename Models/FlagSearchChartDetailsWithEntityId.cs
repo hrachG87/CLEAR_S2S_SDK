@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FlagSearchChartDetailsWithEntityId")]
 public class FlagSearchChartDetailsWithEntityId
 {
@@ -43,5 +42,4 @@ public class FlagSearchChartDetailsWithEntityId
     [XmlElement("Associations")]
     public List<AnalyticalAssociation> Associations { get; set; }
 
-}
 }

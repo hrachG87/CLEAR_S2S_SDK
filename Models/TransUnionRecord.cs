@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("TransUnionRecord")]
 public class TransUnionRecord
 {
@@ -37,5 +36,4 @@ public class TransUnionRecord
     [XmlElement("AKAName")]
     public PersonName AKAName { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonDocumentNameCriteria")]
 public class PersonDocumentNameCriteria
 {
@@ -25,5 +24,4 @@ public class PersonDocumentNameCriteria
     [XmlElement("PersonRole")]
     public string PersonRole { get; set; }
 
-}
 }

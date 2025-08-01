@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("HealthcareInformation")]
 public class HealthcareInformation
 {
@@ -19,5 +18,4 @@ public class HealthcareInformation
     [XmlElement("NPI")]
     public RiskFlagInfo NPI { get; set; }
 
-}
 }

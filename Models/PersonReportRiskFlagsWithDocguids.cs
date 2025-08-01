@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonReportRiskFlagsWithDocguids")]
 public class PersonReportRiskFlagsWithDocguids
 {
@@ -79,5 +78,4 @@ public class PersonReportRiskFlagsWithDocguids
     [XmlElement("SSNFormatInvalid")]
     public PersonReportRiskFlagInfo SSNFormatInvalid { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("LicenseResultsPage")]
 public class LicenseResultsPage
 {
@@ -19,5 +18,4 @@ public class LicenseResultsPage
     [XmlElement("ResultGroup")]
     public List<LicenseSearchResultsGroup> ResultGroup { get; set; }
 
-}
 }

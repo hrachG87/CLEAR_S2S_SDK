@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PartyToRiskBasedLawsuits")]
 public class PartyToRiskBasedLawsuits
 {
@@ -58,5 +57,4 @@ public class PartyToRiskBasedLawsuits
     [XmlElement("WrongfulDeath")]
     public BusinessRiskFlagInfo WrongfulDeath { get; set; }
 
-}
 }

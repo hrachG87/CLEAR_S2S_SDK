@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DetailResult")]
 public class DetailResult
 {
@@ -19,5 +18,4 @@ public class DetailResult
     [XmlElement("SanctionOverrideList")]
     public SanctionOverrideList SanctionOverrideList { get; set; }
 
-}
 }

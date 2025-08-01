@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AssociatesRelatives")]
 public class AssociatesRelatives
 {
@@ -133,5 +132,4 @@ public class AssociatesRelatives
     [XmlElement("AssociateRelativeWithOFAC")]
     public RiskFlagInfo AssociateRelativeWithOFAC { get; set; }
 
-}
 }

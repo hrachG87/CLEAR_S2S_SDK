@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Marijuana")]
 public class Marijuana
 {
@@ -22,5 +21,4 @@ public class Marijuana
     [XmlElement("MarijuanaRemarks")]
     public RiskFlagInfo MarijuanaRemarks { get; set; }
 
-}
 }

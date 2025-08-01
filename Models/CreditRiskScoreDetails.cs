@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CreditRiskScoreDetails")]
 public class CreditRiskScoreDetails
 {
@@ -16,5 +15,4 @@ public class CreditRiskScoreDetails
     [XmlElement("FactorsLoweringScore")]
     public FactorsLoweringScore FactorsLoweringScore { get; set; }
 
-}
 }

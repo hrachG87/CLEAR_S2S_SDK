@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonUserTermRecord")]
 public class PersonUserTermRecord
 {
@@ -40,5 +39,4 @@ public class PersonUserTermRecord
     [XmlElement("GlobalBeneficialOwnershipSearch")]
     public PersonUserSearchInfo GlobalBeneficialOwnershipSearch { get; set; }
 
-}
 }

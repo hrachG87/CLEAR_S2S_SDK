@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DriverLicenseInfo")]
 public class DriverLicenseInfo
 {
@@ -22,5 +21,4 @@ public class DriverLicenseInfo
     [XmlElement("MatchToSubjectsDLNumber")]
     public List<string> MatchToSubjectsDLNumber { get; set; }
 
-}
 }

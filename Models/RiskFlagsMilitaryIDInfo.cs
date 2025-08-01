@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RiskFlagsMilitaryIDInfo")]
 public class RiskFlagsMilitaryIDInfo
 {
@@ -16,5 +15,4 @@ public class RiskFlagsMilitaryIDInfo
     [XmlElement("DocumentIdentifierInfo")]
     public RiskFlagsDocumentIdentifierInfo DocumentIdentifierInfo { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("USCoastGuardRecord")]
 public class USCoastGuardRecord
 {
@@ -37,5 +36,4 @@ public class USCoastGuardRecord
     [XmlElement("ITCRegisteredVessel")]
     public ITCRegisteredVessel ITCRegisteredVessel { get; set; }
 
-}
 }

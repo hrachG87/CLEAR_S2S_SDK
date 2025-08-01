@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ExpBusCreditResponseDetail")]
 public class ExpBusCreditResponseDetail
 {
@@ -25,5 +24,4 @@ public class ExpBusCreditResponseDetail
     [XmlElement("Source")]
     public string Source { get; set; }
 
-}
 }

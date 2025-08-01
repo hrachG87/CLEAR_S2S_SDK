@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessCriteria")]
 public class BusinessCriteria
 {
@@ -31,5 +30,4 @@ public class BusinessCriteria
     [XmlElement("NPINumber")]
     public string NPINumber { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("TradePaymentSummaryRecord")]
 public class TradePaymentSummaryRecord
 {
@@ -22,5 +21,4 @@ public class TradePaymentSummaryRecord
     [XmlElement("TotalTrade")]
     public TradePaymentDetails TotalTrade { get; set; }
 
-}
 }

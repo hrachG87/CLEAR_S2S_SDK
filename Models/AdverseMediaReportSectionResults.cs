@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaReportSectionResults")]
 public class AdverseMediaReportSectionResults
 {
@@ -25,5 +24,4 @@ public class AdverseMediaReportSectionResults
     [XmlElement("CLEARReportDescription")]
     public string CLEARReportDescription { get; set; }
 
-}
 }

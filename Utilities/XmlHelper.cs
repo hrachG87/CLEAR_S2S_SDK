@@ -1,8 +1,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Utilities
-{
+
     public static class XmlHelper
     {
         public static string Serialize<T>(T obj)
@@ -20,4 +19,3 @@ namespace BOH.Data.CustomerVerification.CLEARSdk.Utilities
             return (T)serializer.Deserialize(reader);
         }
     }
-}

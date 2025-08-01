@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PeopleWebAnalyticsDetails")]
 public class PeopleWebAnalyticsDetails
 {
@@ -37,5 +36,4 @@ public class PeopleWebAnalyticsDetails
     [XmlElement("PossiblyRelatedSources")]
     public List<PossiblyRelatedSources> PossiblyRelatedSources { get; set; }
 
-}
 }

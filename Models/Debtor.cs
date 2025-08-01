@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Debtor")]
 public class Debtor
 {
@@ -55,5 +54,4 @@ public class Debtor
     [XmlElement("SSNInfo")]
     public List<SSNInfo> SSNInfo { get; set; }
 
-}
 }

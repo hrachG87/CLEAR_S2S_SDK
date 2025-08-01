@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessNameCriteria")]
 public class BusinessNameCriteria
 {
@@ -22,5 +21,4 @@ public class BusinessNameCriteria
     [XmlElement("SecondaryLastName")]
     public string SecondaryLastName { get; set; }
 
-}
 }

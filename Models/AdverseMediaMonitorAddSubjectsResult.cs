@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaMonitorAddSubjectsResult")]
 public class AdverseMediaMonitorAddSubjectsResult
 {
@@ -19,5 +18,4 @@ public class AdverseMediaMonitorAddSubjectsResult
     [XmlElement("AlertSubjects")]
     public AlertSubjects AlertSubjects { get; set; }
 
-}
 }

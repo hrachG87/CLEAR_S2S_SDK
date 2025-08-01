@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ExpBusCreditReportSections")]
 public class ExpBusCreditReportSections
 {
@@ -61,5 +60,4 @@ public class ExpBusCreditReportSections
     [XmlElement("UCCFilingsSummarySection")]
     public UCCFilingsSummarySection UCCFilingsSummarySection { get; set; }
 
-}
 }

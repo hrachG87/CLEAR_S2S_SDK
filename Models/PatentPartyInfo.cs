@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PatentPartyInfo")]
 public class PatentPartyInfo
 {
@@ -16,5 +15,4 @@ public class PatentPartyInfo
     [XmlElement("State")]
     public string State { get; set; }
 
-}
 }

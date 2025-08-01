@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ExperianRealTimeRecord")]
 public class ExperianRealTimeRecord
 {
@@ -37,5 +36,4 @@ public class ExperianRealTimeRecord
     [XmlElement("Source")]
     public string Source { get; set; }
 
-}
 }

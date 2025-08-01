@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DunBradstreetRecord")]
 public class DunBradstreetRecord
 {
@@ -151,5 +150,4 @@ public class DunBradstreetRecord
     [XmlElement("MSAName")]
     public string MSAName { get; set; }
 
-}
 }

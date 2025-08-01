@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DocumentHeader")]
 public class DocumentHeader
 {
@@ -34,5 +33,4 @@ public class DocumentHeader
     [XmlElement("VolumeIssue")]
     public string VolumeIssue { get; set; }
 
-}
 }

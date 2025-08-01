@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Bankruptcy")]
 public class Bankruptcy
 {
@@ -28,5 +27,4 @@ public class Bankruptcy
     [XmlElement("MultipleBankruptciesPersonalAndBusiness")]
     public RiskFlagInfo MultipleBankruptciesPersonalAndBusiness { get; set; }
 
-}
 }

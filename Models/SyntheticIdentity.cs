@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SyntheticIdentity")]
 public class SyntheticIdentity
 {
@@ -34,5 +33,4 @@ public class SyntheticIdentity
     [XmlElement("SSNMatchesMultipleIndividuals")]
     public RiskFlagInfo SSNMatchesMultipleIndividuals { get; set; }
 
-}
 }

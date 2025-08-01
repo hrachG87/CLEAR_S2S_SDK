@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("Aircraft")]
 public class Aircraft
 {
@@ -13,5 +12,4 @@ public class Aircraft
     [XmlElement("AircraftMultiple")]
     public RiskFlagInfo AircraftMultiple { get; set; }
 
-}
 }

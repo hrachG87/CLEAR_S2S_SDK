@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SchoolInfo")]
 public class SchoolInfo
 {
@@ -34,5 +33,4 @@ public class SchoolInfo
     [XmlElement("SchoolStartDate")]
     public string SchoolStartDate { get; set; }
 
-}
 }

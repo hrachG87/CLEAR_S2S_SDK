@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FlightEscape")]
 public class FlightEscape
 {
@@ -22,5 +21,4 @@ public class FlightEscape
     [XmlElement("FlightEscapeFlag")]
     public RiskFlagInfo FlightEscapeFlag { get; set; }
 
-}
 }

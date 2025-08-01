@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonQuickAnalysisFlagCriteria")]
 public class PersonQuickAnalysisFlagCriteria
 {
@@ -25,5 +24,4 @@ public class PersonQuickAnalysisFlagCriteria
     [XmlElement("RelativesMinimumStrengthOfAssociation")]
     public int RelativesMinimumStrengthOfAssociation { get; set; }
 
-}
 }

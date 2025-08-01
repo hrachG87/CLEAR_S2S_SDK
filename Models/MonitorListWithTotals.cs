@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("MonitorListWithTotals")]
 public class MonitorListWithTotals
 {
@@ -13,5 +12,4 @@ public class MonitorListWithTotals
     [XmlElement("TotalAlertSubjects")]
     public int TotalAlertSubjects { get; set; }
 
-}
 }

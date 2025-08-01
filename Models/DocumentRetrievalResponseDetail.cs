@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DocumentRetrievalResponseDetail")]
 public class DocumentRetrievalResponseDetail
 {
@@ -217,5 +216,4 @@ public class DocumentRetrievalResponseDetail
     [XmlElement("CCWLicenseRecord")]
     public List<CCWLicenseRecord> CCWLicenseRecord { get; set; }
 
-}
 }

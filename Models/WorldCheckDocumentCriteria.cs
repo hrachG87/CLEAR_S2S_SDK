@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WorldCheckDocumentCriteria")]
 public class WorldCheckDocumentCriteria
 {
@@ -58,5 +57,4 @@ public class WorldCheckDocumentCriteria
     [XmlElement("DocGuid")]
     public string DocGuid { get; set; }
 
-}
 }

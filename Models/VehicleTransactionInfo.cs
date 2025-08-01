@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("VehicleTransactionInfo")]
 public class VehicleTransactionInfo
 {
@@ -16,5 +15,4 @@ public class VehicleTransactionInfo
     [XmlElement("LienTitleInfo")]
     public LienTitleInfo LienTitleInfo { get; set; }
 
-}
 }

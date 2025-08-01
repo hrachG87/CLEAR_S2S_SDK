@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SourceDocuments")]
 public class SourceDocuments
 {
@@ -16,5 +15,4 @@ public class SourceDocuments
     [XmlElement("SourceDocument")]
     public List<GlobalBeneficialOwnershipSourceDocumentsRecord> SourceDocument { get; set; }
 
-}
 }

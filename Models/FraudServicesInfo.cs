@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FraudServicesInfo")]
 public class FraudServicesInfo
 {
@@ -28,5 +27,4 @@ public class FraudServicesInfo
     [XmlElement("SSNLastIssueYear")]
     public string SSNLastIssueYear { get; set; }
 
-}
 }

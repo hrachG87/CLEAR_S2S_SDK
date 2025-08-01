@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("LastKnownAddress")]
 public class LastKnownAddress
 {
@@ -19,5 +18,4 @@ public class LastKnownAddress
     [XmlElement("LastKnownZip")]
     public string LastKnownZip { get; set; }
 
-}
 }

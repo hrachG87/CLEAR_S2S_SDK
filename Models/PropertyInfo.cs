@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PropertyInfo")]
 public class PropertyInfo
 {
@@ -28,5 +27,4 @@ public class PropertyInfo
     [XmlElement("FIPSCodeInfo")]
     public FIPSCodeInfo FIPSCodeInfo { get; set; }
 
-}
 }

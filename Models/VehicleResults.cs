@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("VehicleResults")]
 public class VehicleResults
 {
@@ -16,5 +15,4 @@ public class VehicleResults
     [XmlElement("GroupCount")]
     public int GroupCount { get; set; }
 
-}
 }

@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CorporateLinkageRecord")]
 public class CorporateLinkageRecord
 {
@@ -16,5 +15,4 @@ public class CorporateLinkageRecord
     [XmlElement("Subsidiaries")]
     public CorporateLinkageDetails Subsidiaries { get; set; }
 
-}
 }

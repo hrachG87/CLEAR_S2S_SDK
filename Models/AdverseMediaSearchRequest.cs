@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdverseMediaSearchRequest")]
 public class AdverseMediaSearchRequest
 {
@@ -22,5 +21,4 @@ public class AdverseMediaSearchRequest
     [XmlElement("SanctionOverrideList")]
     public SanctionOverrideList SanctionOverrideList { get; set; }
 
-}
 }

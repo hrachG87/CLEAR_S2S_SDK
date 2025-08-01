@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonReportCandidateResults")]
 public class PersonReportCandidateResults
 {
@@ -13,5 +12,4 @@ public class PersonReportCandidateResults
     [XmlElement("Uri")]
     public string Uri { get; set; }
 
-}
 }

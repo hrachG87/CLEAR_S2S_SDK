@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RiskInformPersonServiceError")]
 public class RiskInformPersonServiceError
 {
@@ -13,5 +12,4 @@ public class RiskInformPersonServiceError
     [XmlElement("ErrorMsg")]
     public string ErrorMsg { get; set; }
 
-}
 }

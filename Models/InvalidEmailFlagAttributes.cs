@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("InvalidEmailFlagAttributes")]
 public class InvalidEmailFlagAttributes
 {
@@ -16,5 +15,4 @@ public class InvalidEmailFlagAttributes
     [XmlElement("Value")]
     public string Value { get; set; }
 
-}
 }

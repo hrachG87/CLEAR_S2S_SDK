@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ResponseValue")]
 public class ResponseValue
 {
@@ -16,5 +15,4 @@ public class ResponseValue
     [XmlElement("Column")]
     public string Column { get; set; }
 
-}
 }

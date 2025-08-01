@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WebAndSocialMediaSearchResultsPage")]
 public class WebAndSocialMediaSearchResultsPage
 {
@@ -19,5 +18,4 @@ public class WebAndSocialMediaSearchResultsPage
     [XmlElement("ResultGroup")]
     public List<WebAndSocialMediaResultGroup> ResultGroup { get; set; }
 
-}
 }

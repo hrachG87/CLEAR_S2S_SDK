@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessOverviewRecord")]
 public class BusinessOverviewRecord
 {
@@ -88,5 +87,4 @@ public class BusinessOverviewRecord
     [XmlElement("sicdetail")]
     public List<SICDetail> sicdetail { get; set; }
 
-}
 }

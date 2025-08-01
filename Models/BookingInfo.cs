@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BookingInfo")]
 public class BookingInfo
 {
@@ -52,5 +51,4 @@ public class BookingInfo
     [XmlElement("Status")]
     public string Status { get; set; }
 
-}
 }

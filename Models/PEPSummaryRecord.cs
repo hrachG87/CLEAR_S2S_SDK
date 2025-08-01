@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PEPSummaryRecord")]
 public class PEPSummaryRecord
 {
@@ -22,5 +21,4 @@ public class PEPSummaryRecord
     [XmlElement("Relevance")]
     public string Relevance { get; set; }
 
-}
 }

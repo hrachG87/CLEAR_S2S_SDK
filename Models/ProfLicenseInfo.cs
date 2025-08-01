@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ProfLicenseInfo")]
 public class ProfLicenseInfo
 {
@@ -34,5 +33,4 @@ public class ProfLicenseInfo
     [XmlElement("TypeofLicense")]
     public List<string> TypeofLicense { get; set; }
 
-}
 }

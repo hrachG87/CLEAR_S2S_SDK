@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("GlobalBeneficialOwnershipReportSectionSelector")]
 public class GlobalBeneficialOwnershipReportSectionSelector
 {
@@ -19,5 +18,4 @@ public class GlobalBeneficialOwnershipReportSectionSelector
     [XmlElement("GlobalBeneficialOwnershipSourceDocumentsSection")]
     public bool GlobalBeneficialOwnershipSourceDocumentsSection { get; set; }
 
-}
 }

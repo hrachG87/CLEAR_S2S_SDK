@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonReportOptions")]
 public class PersonReportOptions
 {
@@ -91,5 +90,4 @@ public class PersonReportOptions
     [XmlElement("AssociatePossibleWorldCheckRelatedIndividual")]
     public bool AssociatePossibleWorldCheckRelatedIndividual { get; set; }
 
-}
 }

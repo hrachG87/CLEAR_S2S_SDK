@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("FIPSCodeInfo")]
 public class FIPSCodeInfo
 {
@@ -22,5 +21,4 @@ public class FIPSCodeInfo
     [XmlElement("FIPSSubCode")]
     public string FIPSSubCode { get; set; }
 
-}
 }

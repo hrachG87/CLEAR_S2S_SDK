@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("RealProperty")]
 public class RealProperty
 {
@@ -25,5 +24,4 @@ public class RealProperty
     [XmlElement("RealPropAssessorMultiple")]
     public RiskFlagInfo RealPropAssessorMultiple { get; set; }
 
-}
 }

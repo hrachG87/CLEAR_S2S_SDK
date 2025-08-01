@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("OriginalLoanInfo")]
 public class OriginalLoanInfo
 {
@@ -19,5 +18,4 @@ public class OriginalLoanInfo
     [XmlElement("SalesTransactionInfo")]
     public SalesTransactionInfo SalesTransactionInfo { get; set; }
 
-}
 }

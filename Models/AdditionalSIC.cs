@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdditionalSIC")]
 public class AdditionalSIC
 {
@@ -22,5 +21,4 @@ public class AdditionalSIC
     [XmlElement("SICInfo6")]
     public List<SICInfo> SICInfo6 { get; set; }
 
-}
 }

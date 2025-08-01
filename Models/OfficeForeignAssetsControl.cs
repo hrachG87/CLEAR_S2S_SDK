@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("OfficeForeignAssetsControl")]
 public class OfficeForeignAssetsControl
 {
@@ -16,5 +15,4 @@ public class OfficeForeignAssetsControl
     [XmlElement("VesselInfo")]
     public CriminalVesselInfo VesselInfo { get; set; }
 
-}
 }

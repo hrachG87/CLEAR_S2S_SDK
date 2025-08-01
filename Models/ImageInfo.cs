@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ImageInfo")]
 public class ImageInfo
 {
@@ -19,5 +18,4 @@ public class ImageInfo
     [XmlElement("LastSeen")]
     public string LastSeen { get; set; }
 
-}
 }

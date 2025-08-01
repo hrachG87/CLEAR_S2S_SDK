@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("EventHistory")]
 public class EventHistory
 {
@@ -16,5 +15,4 @@ public class EventHistory
     [XmlElement("TypeOfHistoryEvent")]
     public string TypeOfHistoryEvent { get; set; }
 
-}
 }

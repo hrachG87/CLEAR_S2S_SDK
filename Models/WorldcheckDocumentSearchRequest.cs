@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WorldcheckDocumentSearchRequest")]
 public class WorldcheckDocumentSearchRequest
 {
@@ -19,5 +18,4 @@ public class WorldcheckDocumentSearchRequest
     [XmlElement("Datasources")]
     public WorldcheckDocumentDataSources Datasources { get; set; }
 
-}
 }

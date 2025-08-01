@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("InstitutionInfo")]
 public class InstitutionInfo
 {
@@ -67,5 +66,4 @@ public class InstitutionInfo
     [XmlElement("TimeServedCredit")]
     public string TimeServedCredit { get; set; }
 
-}
 }

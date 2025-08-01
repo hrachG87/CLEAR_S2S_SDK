@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("BusinessFlags")]
 public class BusinessFlags
 {
@@ -40,5 +39,4 @@ public class BusinessFlags
     [XmlElement("UCCFilings")]
     public UCCFilings UCCFilings { get; set; }
 
-}
 }

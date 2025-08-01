@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("SyntheticIDRecord")]
 public class SyntheticIDRecord
 {
@@ -16,5 +15,4 @@ public class SyntheticIDRecord
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
 
-}
 }

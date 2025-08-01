@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("PersonReportChartDetailsWithEntityId")]
 public class PersonReportChartDetailsWithEntityId
 {
@@ -31,5 +30,4 @@ public class PersonReportChartDetailsWithEntityId
     [XmlElement("Associations")]
     public List<AnalyticalAssociation> Associations { get; set; }
 
-}
 }

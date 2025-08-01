@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("CorpStockInfo")]
 public class CorpStockInfo
 {
@@ -13,5 +12,4 @@ public class CorpStockInfo
     [XmlElement("StockType")]
     public string StockType { get; set; }
 
-}
 }

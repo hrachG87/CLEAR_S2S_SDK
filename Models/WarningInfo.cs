@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("WarningInfo")]
 public class WarningInfo
 {
@@ -34,5 +33,4 @@ public class WarningInfo
     [XmlElement("Warning")]
     public List<string> Warning { get; set; }
 
-}
 }

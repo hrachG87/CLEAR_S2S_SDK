@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("DECorpReportResults")]
 public class DECorpReportResults
 {
@@ -13,5 +12,4 @@ public class DECorpReportResults
     [XmlElement("Uri")]
     public string Uri { get; set; }
 
-}
 }

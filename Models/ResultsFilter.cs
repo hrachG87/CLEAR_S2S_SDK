@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("ResultsFilter")]
 public class ResultsFilter
 {
@@ -25,5 +24,4 @@ public class ResultsFilter
     [XmlElement("CategoryTags")]
     public CategoryTags CategoryTags { get; set; }
 
-}
 }

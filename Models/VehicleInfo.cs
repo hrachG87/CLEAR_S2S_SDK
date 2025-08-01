@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("VehicleInfo")]
 public class VehicleInfo
 {
@@ -121,5 +120,4 @@ public class VehicleInfo
     [XmlElement("BrandTitleIndicator")]
     public string BrandTitleIndicator { get; set; }
 
-}
 }

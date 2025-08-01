@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace BOH.Data.CustomerVerification.CLEARSdk.Models
-{
+
 [XmlRoot("AdditionalInfo")]
 public class AdditionalInfo
 {
@@ -301,5 +300,4 @@ public class AdditionalInfo
     [XmlElement("AKAWeak")]
     public string AKAWeak { get; set; }
 
-}
 }
