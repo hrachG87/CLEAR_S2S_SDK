@@ -11,112 +11,112 @@ public class AdverseMediaMonitorClient
         _httpClient = httpClient;
     }
 
-    public async Task<addMonitorSubjectsResponse> addMonitorSubjectsAsync(addMonitorSubjectsRequest request)
+    public async Task<AdverseMediaMonitorAddSubjectsResult> addMonitorSubjectsAsync(AdverseMediaMonitorAddSubjectsRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/addMonitorSubjects", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<addMonitorSubjectsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorAddSubjectsResult>(xmlString);
     }
 
-    public async Task<getAddMonitorSubjectsStatusResponse> getAddMonitorSubjectsStatusAsync(string id)
+    public async Task<AdverseMediaMonitorAddSubjectsStatusResult> getAddMonitorSubjectsStatusAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/addMonitorSubjects/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getAddMonitorSubjectsStatusResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorAddSubjectsStatusResult>(xmlString);
     }
 
-    public async Task<getAnalyticsResponse> getAnalyticsAsync()
+    public async Task<AdverseMediaMonitorAnalyticsResponse> getAnalyticsAsync()
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/analytics");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getAnalyticsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorAnalyticsResponse>(xmlString);
     }
 
-    public async Task<createMonitorResponse> createMonitorAsync(createMonitorRequest request)
+    public async Task<AdverseMediaCreateMonitorResult> createMonitorAsync(AdverseMediaCreateMonitorRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/createMonitor", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createMonitorResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaCreateMonitorResult>(xmlString);
     }
 
-    public async Task<getCreateMonitorStatusResponse> getCreateMonitorStatusAsync(string id)
+    public async Task<AdverseMediaCreateMonitorStatusResult> getCreateMonitorStatusAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/createMonitor/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getCreateMonitorStatusResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaCreateMonitorStatusResult>(xmlString);
     }
 
-    public async Task<deleteMonitorResponse> deleteMonitorAsync(deleteMonitorRequest request)
+    public async Task<AdverseMediaDeleteMonitorResult> deleteMonitorAsync(AdverseMediaDeleteMonitorRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/deleteMonitor", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<deleteMonitorResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaDeleteMonitorResult>(xmlString);
     }
 
-    public async Task<deleteMonitorSubjectsResponse> deleteMonitorSubjectsAsync(deleteMonitorSubjectsRequest request)
+    public async Task<AdverseMediaMonitorDeleteSubjectsResult> deleteMonitorSubjectsAsync(AdverseMediaMonitorDeleteSubjectsRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/deleteMonitorSubjects", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<deleteMonitorSubjectsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorDeleteSubjectsResult>(xmlString);
     }
 
-    public async Task<getMonitorListDetailResponse> getMonitorListDetailAsync()
+    public async Task<AdverseMediaMonitorListDetail> getMonitorListDetailAsync()
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/monitorListDetail");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getMonitorListDetailResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorListDetail>(xmlString);
     }
 
-    public async Task<getMonitorListsResponse> getMonitorListsAsync()
+    public async Task<AdverseMediaMonitorListsResponse> getMonitorListsAsync()
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/monitorLists");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getMonitorListsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorListsResponse>(xmlString);
     }
 
-    public async Task<monitorResultsResponse> monitorResultsAsync(monitorResultsRequest request)
+    public async Task<AdverseMediaMonitorResults> monitorResultsAsync(AdverseMediaMonitorResultsRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/monitorResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<monitorResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorResults>(xmlString);
     }
 
-    public async Task<getMonitorResultsResponse> getMonitorResultsAsync(string id)
+    public async Task<AdverseMediaMonitorResultsPage> getMonitorResultsAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/monitorResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getMonitorResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorResultsPage>(xmlString);
     }
 
-    public async Task<updateMonitorResponse> updateMonitorAsync(updateMonitorRequest request)
+    public async Task<AdverseMediaUpdateMonitorResult> updateMonitorAsync(AdverseMediaUpdateMonitorRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/updateMonitor", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<updateMonitorResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaUpdateMonitorResult>(xmlString);
     }
 
 }

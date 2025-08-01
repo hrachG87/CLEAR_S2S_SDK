@@ -11,22 +11,22 @@ public class PersonReportClient
         _httpClient = httpClient;
     }
 
-    public async Task<createReportResults5Response> createReportResults_5Async(createReportResults5Request request)
+    public async Task<PersonReportResults> createReportResults_5Async(PersonReportRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/personReport/reportResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createReportResults5Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonReportResults>(xmlString);
     }
 
-    public async Task<getPersonReportResultsResponse> getPersonReportResultsAsync(string id)
+    public async Task<PersonReportDetails> getPersonReportResultsAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/personReport/reportResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getPersonReportResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonReportDetails>(xmlString);
     }
 
 }

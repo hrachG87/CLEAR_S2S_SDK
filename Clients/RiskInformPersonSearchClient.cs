@@ -11,40 +11,40 @@ public class RiskInformPersonSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults16Response> createSearchResults_16Async(createSearchResults16Request request)
+    public async Task<RiskInformPersonSearchResults> createSearchResults_16Async(RiskInformPersonSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v3/riskinformperson/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults16Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformPersonSearchResults>(xmlString);
     }
 
-    public async Task<getSearchResults6Response> getSearchResults_6Async(string id)
+    public async Task<RiskInformPersonSearchResponseV3> getSearchResults_6Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v3/riskinformperson/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults6Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformPersonSearchResponseV3>(xmlString);
     }
 
-    public async Task<createSearchResults15Response> createSearchResults_15Async(createSearchResults15Request request)
+    public async Task<RiskInformPersonSearchResults> createSearchResults_15Async(RiskInformPersonSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/riskinformperson/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults15Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformPersonSearchResults>(xmlString);
     }
 
-    public async Task<getSearchResults5Response> getSearchResults_5Async(string id)
+    public async Task<RiskInformPersonSearchResponse> getSearchResults_5Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/riskinformperson/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults5Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformPersonSearchResponse>(xmlString);
     }
 
 }

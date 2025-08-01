@@ -11,22 +11,22 @@ public class LicenseSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults19Response> createSearchResults_19Async(createSearchResults19Request request)
+    public async Task<LicenseResults> createSearchResults_19Async(LicenseSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/license/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults19Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<LicenseResults>(xmlString);
     }
 
-    public async Task<getGroupRange10Response> getGroupRange_10Async(string id)
+    public async Task<LicenseResultsPage> getGroupRange_10Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/license/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange10Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<LicenseResultsPage>(xmlString);
     }
 
 }

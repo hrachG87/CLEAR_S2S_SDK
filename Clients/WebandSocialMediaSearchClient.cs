@@ -11,22 +11,22 @@ public class WebandSocialMediaSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults28Response> createSearchResults_28Async(createSearchResults28Request request)
+    public async Task<WebAndSocialMediaSearchResults> createSearchResults_28Async(WebAndSocialMediaSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/webandsocialmedia/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults28Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<WebAndSocialMediaSearchResults>(xmlString);
     }
 
-    public async Task<getSearchResults8Response> getSearchResults_8Async(string id)
+    public async Task<WebAndSocialMediaSearchResultsPage> getSearchResults_8Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/webandsocialmedia/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults8Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<WebAndSocialMediaSearchResultsPage>(xmlString);
     }
 
 }

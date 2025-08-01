@@ -11,22 +11,22 @@ public class CustomWorkflowSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults17Response> createSearchResults_17Async(createSearchResults17Request request)
+    public async Task<WorkflowResults> createSearchResults_17Async(WorkflowSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/workflow/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults17Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<WorkflowResults>(xmlString);
     }
 
-    public async Task<getSearchResults7Response> getSearchResults_7Async(string id)
+    public async Task<WorkflowSearchResponse> getSearchResults_7Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/workflow/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults7Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<WorkflowSearchResponse>(xmlString);
     }
 
 }

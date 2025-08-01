@@ -11,30 +11,30 @@ public class NewsSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults20Response> createSearchResults_20Async(createSearchResults20Request request)
+    public async Task<NewsSearchResults> createSearchResults_20Async(NewsSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/news/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults20Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<NewsSearchResults>(xmlString);
     }
 
-    public async Task<getGroupRange11Response> getGroupRange_11Async(string id)
+    public async Task<NewsSummaryPage> getGroupRange_11Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/news/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange11Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<NewsSummaryPage>(xmlString);
     }
 
-    public async Task<getRecordResponse> getRecordAsync(string groupId, string recordId)
+    public async Task<NewsResultsPage> getRecordAsync(string groupId, string recordId)
     {
         var response = await _httpClient.GetAsync($"/v2/news/searchResults/{{groupId}}/{{recordId}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getRecordResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<NewsResultsPage>(xmlString);
     }
 
 }

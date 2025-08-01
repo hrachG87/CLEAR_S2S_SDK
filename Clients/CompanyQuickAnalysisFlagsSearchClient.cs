@@ -11,22 +11,22 @@ public class CompanyQuickAnalysisFlagsSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults24Response> createSearchResults_24Async(createSearchResults24Request request)
+    public async Task<CompanyQuickAnalysisFlagResults> createSearchResults_24Async(CompanyQuickAnalysisFlagRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/business/quickanalysis/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults24Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CompanyQuickAnalysisFlagResults>(xmlString);
     }
 
-    public async Task<getGroupRange13Response> getGroupRange_13Async(string id)
+    public async Task<CompanyQuickAnalysisFlagResultsPage> getGroupRange_13Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/business/quickanalysis/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange13Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CompanyQuickAnalysisFlagResultsPage>(xmlString);
     }
 
 }

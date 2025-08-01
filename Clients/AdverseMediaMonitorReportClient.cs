@@ -11,22 +11,22 @@ public class AdverseMediaMonitorReportClient
         _httpClient = httpClient;
     }
 
-    public async Task<createMonitorReportResultsResponse> createMonitorReportResultsAsync(createMonitorReportResultsRequest request)
+    public async Task<AdverseMediaMonitorReportResults> createMonitorReportResultsAsync(AdverseMediaMonitorReportRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemediaReport/monitorReportResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createMonitorReportResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorReportResults>(xmlString);
     }
 
-    public async Task<getMonitorReportResultsResponse> getMonitorReportResultsAsync(string id)
+    public async Task<AdverseMediaMonitorReportDetails> getMonitorReportResultsAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/adversemediaReport/monitorReportResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getMonitorReportResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaMonitorReportDetails>(xmlString);
     }
 
 }

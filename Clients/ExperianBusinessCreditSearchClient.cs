@@ -11,22 +11,22 @@ public class ExperianBusinessCreditSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults3Response> createSearchResults_3Async(createSearchResults3Request request)
+    public async Task<ExpBusCreditResults> createSearchResults_3Async(ExpBusCreditSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/expbuscredit/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults3Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<ExpBusCreditResults>(xmlString);
     }
 
-    public async Task<getGroupRange2Response> getGroupRange_2Async(string id)
+    public async Task<ExpBusCreditResultsPage> getGroupRange_2Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/expbuscredit/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange2Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<ExpBusCreditResultsPage>(xmlString);
     }
 
 }

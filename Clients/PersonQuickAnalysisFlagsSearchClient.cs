@@ -11,22 +11,22 @@ public class PersonQuickAnalysisFlagsSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults25Response> createSearchResults_25Async(createSearchResults25Request request)
+    public async Task<PersonQuickAnalysisFlagResults> createSearchResults_25Async(PersonQuickAnalysisFlagRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/person/quickanalysis/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults25Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonQuickAnalysisFlagResults>(xmlString);
     }
 
-    public async Task<getGroupRange14Response> getGroupRange_14Async(string id)
+    public async Task<PersonQuickAnalysisFlagResultsPage> getGroupRange_14Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/person/quickanalysis/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange14Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonQuickAnalysisFlagResultsPage>(xmlString);
     }
 
 }

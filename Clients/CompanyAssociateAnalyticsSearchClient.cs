@@ -11,22 +11,22 @@ public class CompanyAssociateAnalyticsSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<startSearchResponse> startSearchAsync(startSearchRequest request)
+    public async Task<CompanyAssociateAnalyticsResults> startSearchAsync(CompanyAssociateAnalyticsRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/business/assocanalytics/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<startSearchResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CompanyAssociateAnalyticsResults>(xmlString);
     }
 
-    public async Task<getResultsResponse> getResultsAsync(string id)
+    public async Task<CompanyAssociateAnalyticsResultsPage> getResultsAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/business/assocanalytics/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CompanyAssociateAnalyticsResultsPage>(xmlString);
     }
 
 }

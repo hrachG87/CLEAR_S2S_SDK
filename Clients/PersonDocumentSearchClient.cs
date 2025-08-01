@@ -11,22 +11,22 @@ public class PersonDocumentSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults26Response> createSearchResults_26Async(createSearchResults26Request request)
+    public async Task<PersonDocumentResults> createSearchResults_26Async(PersonDocumentSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/persondocument/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults26Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonDocumentResults>(xmlString);
     }
 
-    public async Task<getGroupRange15Response> getGroupRange_15Async(string id)
+    public async Task<PersonDocumentResultsPage> getGroupRange_15Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/persondocument/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange15Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PersonDocumentResultsPage>(xmlString);
     }
 
 }

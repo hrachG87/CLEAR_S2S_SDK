@@ -11,22 +11,22 @@ public class PhoneSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults27Response> createSearchResults_27Async(createSearchResults27Request request)
+    public async Task<PhoneResults> createSearchResults_27Async(PhoneSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/phone/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults27Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PhoneResults>(xmlString);
     }
 
-    public async Task<getGroupRange16Response> getGroupRange_16Async(string id)
+    public async Task<PhoneResultsPage> getGroupRange_16Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/phone/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange16Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PhoneResultsPage>(xmlString);
     }
 
 }

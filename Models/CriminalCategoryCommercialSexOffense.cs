@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
+
+[XmlRoot("CriminalCategoryCommercialSexOffense")]
+public class CriminalCategoryCommercialSexOffense
+{
+    [XmlElement("HouseIllFame")]
+    public CriminalChargetypes HouseIllFame { get; set; }
+
+    [XmlElement("Pimping")]
+    public CriminalChargetypes Pimping { get; set; }
+
+    [XmlElement("HomosexualProstitution")]
+    public CriminalChargetypes HomosexualProstitution { get; set; }
+
+    [XmlElement("Prostitution")]
+    public CriminalChargetypes Prostitution { get; set; }
+
+    [XmlElement("FrequentHouseIllFame")]
+    public CriminalChargetypes FrequentHouseIllFame { get; set; }
+
+    [XmlElement("TransportFemaleForImmoralPurpose")]
+    public CriminalChargetypes TransportFemaleForImmoralPurpose { get; set; }
+
+    [XmlElement("ProstitutionProcurementMinor")]
+    public CriminalChargetypes ProstitutionProcurementMinor { get; set; }
+
+    [XmlElement("ProstitutionProcurementAdult")]
+    public CriminalChargetypes ProstitutionProcurementAdult { get; set; }
+
+    [XmlElement("InterstateTransportForCommSex")]
+    public CriminalChargetypes InterstateTransportForCommSex { get; set; }
+
+    [XmlElement("CommercialSex")]
+    public CriminalChargetypes CommercialSex { get; set; }
+
+    [XmlElement("Misdemeanor Charge")]
+    public bool Misdemeanor Charge { get; set; }
+
+    [XmlElement("Misdemeanor Conviction")]
+    public bool Misdemeanor Conviction { get; set; }
+
+    [XmlElement("Felony Charge")]
+    public bool Felony Charge { get; set; }
+
+    [XmlElement("Felony Conviction")]
+    public bool Felony Conviction { get; set; }
+}

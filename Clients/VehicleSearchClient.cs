@@ -11,22 +11,22 @@ public class VehicleSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults30Response> createSearchResults_30Async(createSearchResults30Request request)
+    public async Task<VehicleResults> createSearchResults_30Async(VehicleSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/vehicle/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults30Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<VehicleResults>(xmlString);
     }
 
-    public async Task<getGroupRange18Response> getGroupRange_18Async(string id)
+    public async Task<VehicleResultsPage> getGroupRange_18Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/vehicle/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange18Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<VehicleResultsPage>(xmlString);
     }
 
 }

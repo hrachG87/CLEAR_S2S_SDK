@@ -11,22 +11,22 @@ public class BusinessSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults1Response> createSearchResults_1Async(createSearchResults1Request request)
+    public async Task<BusinessResults> createSearchResults_1Async(BusinessSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/business/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<BusinessResults>(xmlString);
     }
 
-    public async Task<getGroupRangeResponse> getGroupRangeAsync(string id)
+    public async Task<BusinessResultsPage> getGroupRangeAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/business/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRangeResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<BusinessResultsPage>(xmlString);
     }
 
 }

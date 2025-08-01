@@ -11,22 +11,22 @@ public class DelawareCorporateGatewayReportClient
         _httpClient = httpClient;
     }
 
-    public async Task<createReportResults2Response> createReportResults_2Async(createReportResults2Request request)
+    public async Task<DECorpReportResults> createReportResults_2Async(DECorpReportRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/decorpReport/reportResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createReportResults2Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DECorpReportResults>(xmlString);
     }
 
-    public async Task<getBusinessReportResults1Response> getBusinessReportResults_1Async(string id)
+    public async Task<DECorpReportDetails> getBusinessReportResults_1Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/decorpReport/reportResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getBusinessReportResults1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DECorpReportDetails>(xmlString);
     }
 
 }

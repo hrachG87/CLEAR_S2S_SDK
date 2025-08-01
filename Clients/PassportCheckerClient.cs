@@ -11,14 +11,14 @@ public class PassportCheckerClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults10Response> createSearchResults_10Async(createSearchResults10Request request)
+    public async Task<PassportCheckerResult> createSearchResults_10Async(PassportCheckerRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/passportchecker/results", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults10Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<PassportCheckerResult>(xmlString);
     }
 
 }

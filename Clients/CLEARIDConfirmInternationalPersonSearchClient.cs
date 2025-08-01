@@ -11,22 +11,22 @@ public class CLEARIDConfirmInternationalPersonSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults4Response> createSearchResults_4Async(createSearchResults4Request request)
+    public async Task<CIDCInternationalPersonResults> createSearchResults_4Async(CIDCInternationalPersonSearch request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/cidcinternationalperson/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults4Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CIDCInternationalPersonResults>(xmlString);
     }
 
-    public async Task<getSearchResults1Response> getSearchResults_1Async(string id)
+    public async Task<CIDCInternationalPersonSearchResponse> getSearchResults_1Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/cidcinternationalperson/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CIDCInternationalPersonSearchResponse>(xmlString);
     }
 
 }

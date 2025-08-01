@@ -11,22 +11,22 @@ public class DelawareCorporateGatewaySearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults2Response> createSearchResults_2Async(createSearchResults2Request request)
+    public async Task<DECorpResults> createSearchResults_2Async(DECorpSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/decorp/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults2Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DECorpResults>(xmlString);
     }
 
-    public async Task<getGroupRange1Response> getGroupRange_1Async(string id)
+    public async Task<DECorpResultsPage> getGroupRange_1Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/decorp/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DECorpResultsPage>(xmlString);
     }
 
 }

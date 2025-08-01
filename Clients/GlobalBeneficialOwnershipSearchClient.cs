@@ -11,30 +11,30 @@ public class GlobalBeneficialOwnershipSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<getGroupResponse> getGroupAsync(string groupId)
+    public async Task<GlobalBeneficialOwnershipEntityDetailsPage> getGroupAsync(string groupId)
     {
         var response = await _httpClient.GetAsync($"/v2/globalbeneficialownership/entityDetails/{{groupId}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<GlobalBeneficialOwnershipEntityDetailsPage>(xmlString);
     }
 
-    public async Task<createSearchResults7Response> createSearchResults_7Async(createSearchResults7Request request)
+    public async Task<GlobalBeneficialOwnershipResults> createSearchResults_7Async(GlobalBeneficialOwnershipSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/globalbeneficialownership/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults7Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<GlobalBeneficialOwnershipResults>(xmlString);
     }
 
-    public async Task<getGroupRange3Response> getGroupRange_3Async(string id)
+    public async Task<GlobalBeneficialOwnershipResultsPage> getGroupRange_3Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/globalbeneficialownership/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange3Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<GlobalBeneficialOwnershipResultsPage>(xmlString);
     }
 
 }

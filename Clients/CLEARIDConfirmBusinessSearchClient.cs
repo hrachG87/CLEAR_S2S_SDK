@@ -11,22 +11,22 @@ public class CLEARIDConfirmBusinessSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults5Response> createSearchResults_5Async(createSearchResults5Request request)
+    public async Task<EIDVBusinessResults> createSearchResults_5Async(EIDVBusinessSearch request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/eidvbusiness/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults5Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<EIDVBusinessResults>(xmlString);
     }
 
-    public async Task<getSearchResults2Response> getSearchResults_2Async(string id)
+    public async Task<EIDVBusinessSearchResponse> getSearchResults_2Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/eidvbusiness/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults2Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<EIDVBusinessSearchResponse>(xmlString);
     }
 
 }

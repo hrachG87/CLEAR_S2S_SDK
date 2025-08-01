@@ -11,14 +11,14 @@ public class BusinessReportCandidateClient
         _httpClient = httpClient;
     }
 
-    public async Task<createReportResults9Response> createReportResults_9Async(createReportResults9Request request)
+    public async Task<BusinessReportCandidateResults> createReportResults_9Async(BusinessReportCandidateRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/businessReportCandidate/reportResultsCandidate", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createReportResults9Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<BusinessReportCandidateResults>(xmlString);
     }
 
 }

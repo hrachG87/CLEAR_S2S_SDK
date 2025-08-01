@@ -11,22 +11,22 @@ public class RiskInformBusinessReportClient
         _httpClient = httpClient;
     }
 
-    public async Task<createReportResults8Response> createReportResults_8Async(createReportResults8Request request)
+    public async Task<RiskInformBusinessReportResults> createReportResults_8Async(RiskInformBusinessReportRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/riskInformBusinessReport/reportResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createReportResults8Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformBusinessReportResults>(xmlString);
     }
 
-    public async Task<getReportResults3Response> getReportResults_3Async(string id)
+    public async Task<RiskInformBusinessReportDetails> getReportResults_3Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/riskInformBusinessReport/reportResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getReportResults3Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformBusinessReportDetails>(xmlString);
     }
 
 }

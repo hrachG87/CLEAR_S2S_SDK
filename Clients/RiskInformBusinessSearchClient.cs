@@ -11,22 +11,22 @@ public class RiskInformBusinessSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults14Response> createSearchResults_14Async(createSearchResults14Request request)
+    public async Task<RiskInformBusinessSearchResults> createSearchResults_14Async(RiskInformBusinessSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/riskinformbusiness/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults14Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformBusinessSearchResults>(xmlString);
     }
 
-    public async Task<getSearchResults4Response> getSearchResults_4Async(string id)
+    public async Task<RiskInformBusinessSearchResponse> getSearchResults_4Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/riskinformbusiness/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResults4Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RiskInformBusinessSearchResponse>(xmlString);
     }
 
 }

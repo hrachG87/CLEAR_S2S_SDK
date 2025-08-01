@@ -11,22 +11,22 @@ public class AdverseMediaSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResultsResponse> createSearchResultsAsync(createSearchResultsRequest request)
+    public async Task<AdverseMediaSearchResults> createSearchResultsAsync(AdverseMediaSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/adversemedia/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaSearchResults>(xmlString);
     }
 
-    public async Task<getSearchResultsResponse> getSearchResultsAsync(string id)
+    public async Task<AdverseMediaResultsPage> getSearchResultsAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/adversemedia/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSearchResultsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<AdverseMediaResultsPage>(xmlString);
     }
 
 }

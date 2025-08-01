@@ -11,22 +11,22 @@ public class GlobalBeneficialOwnershipReportClient
         _httpClient = httpClient;
     }
 
-    public async Task<createReportResults4Response> createReportResults_4Async(createReportResults4Request request)
+    public async Task<GlobalBeneficialOwnershipReportResults> createReportResults_4Async(GlobalBeneficialOwnershipReportRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/globalbeneficialownershipReport/reportResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createReportResults4Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<GlobalBeneficialOwnershipReportResults>(xmlString);
     }
 
-    public async Task<getReportResults2Response> getReportResults_2Async(string id)
+    public async Task<GlobalBeneficialOwnershipReportDetails> getReportResults_2Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/globalbeneficialownershipReport/reportResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getReportResults2Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<GlobalBeneficialOwnershipReportDetails>(xmlString);
     }
 
 }

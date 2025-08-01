@@ -11,56 +11,56 @@ public class CourtSearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults22Response> createSearchResults_22Async(createSearchResults22Request request)
+    public async Task<CourtResults> createSearchResults_22Async(CourtSearchRequestV3 request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v3/court/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults22Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtResults>(xmlString);
     }
 
-    public async Task<getSummarizedGroupsByRange1Response> getSummarizedGroupsByRange_1Async(string id)
+    public async Task<CourtResultsPage> getSummarizedGroupsByRange_1Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v3/court/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSummarizedGroupsByRange1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtResultsPage>(xmlString);
     }
 
-    public async Task<getDocketDetails1Response> getDocketDetails_1Async(string groupId, string recordId)
+    public async Task<CourtDocumentDetailsPage> getDocketDetails_1Async(string groupId, string recordId)
     {
         var response = await _httpClient.GetAsync($"/v3/court/searchResults/{{groupId}}/{{recordId}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getDocketDetails1Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtDocumentDetailsPage>(xmlString);
     }
 
-    public async Task<createSearchResults21Response> createSearchResults_21Async(createSearchResults21Request request)
+    public async Task<CourtResults> createSearchResults_21Async(CourtSearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/court/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults21Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtResults>(xmlString);
     }
 
-    public async Task<getSummarizedGroupsByRangeResponse> getSummarizedGroupsByRangeAsync(string id)
+    public async Task<CourtResultsPage> getSummarizedGroupsByRangeAsync(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/court/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getSummarizedGroupsByRangeResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtResultsPage>(xmlString);
     }
 
-    public async Task<getDocketDetailsResponse> getDocketDetailsAsync(string groupId, string recordId)
+    public async Task<CourtDocumentDetailsPage> getDocketDetailsAsync(string groupId, string recordId)
     {
         var response = await _httpClient.GetAsync($"/v2/court/searchResults/{{groupId}}/{{recordId}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getDocketDetailsResponse>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<CourtDocumentDetailsPage>(xmlString);
     }
 
 }

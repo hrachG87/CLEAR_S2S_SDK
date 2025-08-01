@@ -11,22 +11,22 @@ public class RealPropertySearchClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults13Response> createSearchResults_13Async(createSearchResults13Request request)
+    public async Task<RealPropertyResults> createSearchResults_13Async(RealPropertySearchRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/realproperty/searchResults", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults13Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RealPropertyResults>(xmlString);
     }
 
-    public async Task<getGroupRange8Response> getGroupRange_8Async(string id)
+    public async Task<RealPropertyResultsPage> getGroupRange_8Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/realproperty/searchResults/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange8Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<RealPropertyResultsPage>(xmlString);
     }
 
 }

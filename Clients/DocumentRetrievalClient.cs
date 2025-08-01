@@ -11,22 +11,22 @@ public class DocumentRetrievalClient
         _httpClient = httpClient;
     }
 
-    public async Task<createSearchResults23Response> createSearchResults_23Async(createSearchResults23Request request)
+    public async Task<DocumentResults> createSearchResults_23Async(DocumentRetrievalRequest request)
     {
         var xml = XmlHelper.Serialize(request);
         var content = new StringContent(xml, Encoding.UTF8, "application/xml");
         var response = await _httpClient.PostAsync("/v2/document/retrieval", content);
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<createSearchResults23Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DocumentResults>(xmlString);
     }
 
-    public async Task<getGroupRange12Response> getGroupRange_12Async(string id)
+    public async Task<DocumentResultsPage> getGroupRange_12Async(string id)
     {
         var response = await _httpClient.GetAsync($"/v2/document/retrieval/{{id}}");
         response.EnsureSuccessStatusCode();
-        var responseXml = await response.Content.ReadAsStringAsync();
-        return XmlHelper.Deserialize<getGroupRange12Response>(responseXml);
+        var xmlString = await response.Content.ReadAsStringAsync();
+        return XmlHelper.Deserialize<DocumentResultsPage>(xmlString);
     }
 
 }
