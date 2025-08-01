@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessContactRecordBusinessInfo")]
 public class BusinessContactRecordBusinessInfo
 {
@@ -25,4 +27,6 @@ public class BusinessContactRecordBusinessInfo
 
     [XmlElement("LinkedInurl")]
     public string LinkedInurl { get; set; }
+
+}
 }

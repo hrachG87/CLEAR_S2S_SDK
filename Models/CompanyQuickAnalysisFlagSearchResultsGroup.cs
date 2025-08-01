@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyQuickAnalysisFlagSearchResultsGroup")]
 public class CompanyQuickAnalysisFlagSearchResultsGroup
 {
@@ -16,4 +18,6 @@ public class CompanyQuickAnalysisFlagSearchResultsGroup
 
     [XmlElement("RecordDetails")]
     public CompanyQuickAnalysisFlagResponseDetailContainer RecordDetails { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SICAndNAICS")]
 public class SICAndNAICS
 {
@@ -16,4 +18,6 @@ public class SICAndNAICS
 
     [XmlElement("SecondaryNAICS")]
     public List<SICInfo> SecondaryNAICS { get; set; }
+
+}
 }

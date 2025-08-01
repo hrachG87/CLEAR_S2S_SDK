@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonSearchAddressInfo")]
 public class PersonSearchAddressInfo
 {
@@ -13,4 +15,6 @@ public class PersonSearchAddressInfo
 
     [XmlElement("SourceInfo")]
     public List<PersonSearchSources> SourceInfo { get; set; }
+
+}
 }

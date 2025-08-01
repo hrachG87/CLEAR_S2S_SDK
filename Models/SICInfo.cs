@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SICInfo")]
 public class SICInfo
 {
@@ -19,4 +21,6 @@ public class SICInfo
 
     [XmlElement("NAICSDesc")]
     public string NAICSDesc { get; set; }
+
+}
 }

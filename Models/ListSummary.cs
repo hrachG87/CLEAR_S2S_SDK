@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ListSummary")]
 public class ListSummary
 {
@@ -31,4 +33,6 @@ public class ListSummary
 
     [XmlElement("CategoryTags")]
     public CategoryTags CategoryTags { get; set; }
+
+}
 }

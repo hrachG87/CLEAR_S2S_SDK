@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CategoryTags")]
 public class CategoryTags
 {
@@ -94,4 +96,6 @@ public class CategoryTags
 
     [XmlElement("PoliticallyExposedPersons")]
     public bool PoliticallyExposedPersons { get; set; }
+
+}
 }

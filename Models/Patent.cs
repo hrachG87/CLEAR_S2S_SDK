@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Patent")]
 public class Patent
 {
@@ -31,4 +33,6 @@ public class Patent
 
     [XmlElement("Abstract")]
     public string Abstract { get; set; }
+
+}
 }

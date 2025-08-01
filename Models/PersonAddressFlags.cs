@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonAddressFlags")]
 public class PersonAddressFlags
 {
@@ -61,4 +63,6 @@ public class PersonAddressFlags
 
     [XmlElement("USAPostOfficeAddress")]
     public RiskFlagInfo USAPostOfficeAddress { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessDocumentDominantValues")]
 public class BusinessDocumentDominantValues
 {
@@ -16,4 +18,6 @@ public class BusinessDocumentDominantValues
 
     [XmlElement("FileState")]
     public string FileState { get; set; }
+
+}
 }

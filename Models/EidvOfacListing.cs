@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EidvOfacListing")]
 public class EidvOfacListing
 {
@@ -16,4 +18,6 @@ public class EidvOfacListing
 
     [XmlElement("OfacListingDetails")]
     public List<EidvOfacListingDetails> OfacListingDetails { get; set; }
+
+}
 }

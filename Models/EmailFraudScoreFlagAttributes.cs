@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EmailFraudScoreFlagAttributes")]
 public class EmailFraudScoreFlagAttributes
 {
@@ -13,4 +15,6 @@ public class EmailFraudScoreFlagAttributes
 
     [XmlElement("Value")]
     public string Value { get; set; }
+
+}
 }

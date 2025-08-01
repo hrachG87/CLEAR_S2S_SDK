@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ProposedSaleInfo")]
 public class ProposedSaleInfo
 {
@@ -25,4 +27,6 @@ public class ProposedSaleInfo
 
     [XmlElement("ItemValue")]
     public string ItemValue { get; set; }
+
+}
 }

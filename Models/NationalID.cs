@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("NationalID")]
 public class NationalID
 {
@@ -10,4 +12,6 @@ public class NationalID
 
     [XmlElement("idType")]
     public string idType { get; set; }
+
+}
 }

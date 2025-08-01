@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("UCCDetail")]
 public class UCCDetail
 {
@@ -19,4 +21,6 @@ public class UCCDetail
 
     [XmlElement("Collaterals")]
     public Collaterals Collaterals { get; set; }
+
+}
 }

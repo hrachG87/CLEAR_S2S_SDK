@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("GlobalBeneficialOwnershipResponseDetail")]
 public class GlobalBeneficialOwnershipResponseDetail
 {
@@ -52,4 +54,6 @@ public class GlobalBeneficialOwnershipResponseDetail
 
     [XmlElement("DUNSNumber")]
     public string DUNSNumber { get; set; }
+
+}
 }

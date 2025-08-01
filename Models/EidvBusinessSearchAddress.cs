@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EidvBusinessSearchAddress")]
 public class EidvBusinessSearchAddress
 {
@@ -22,4 +24,6 @@ public class EidvBusinessSearchAddress
 
     [XmlElement("Country")]
     public string Country { get; set; }
+
+}
 }

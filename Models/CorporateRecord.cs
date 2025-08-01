@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorporateRecord")]
 public class CorporateRecord
 {
@@ -91,4 +93,6 @@ public class CorporateRecord
 
     [XmlElement("FEINTaxIDIndicator")]
     public string FEINTaxIDIndicator { get; set; }
+
+}
 }

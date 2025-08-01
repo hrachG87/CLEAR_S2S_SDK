@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WebAnalyticsImageInfo")]
 public class WebAnalyticsImageInfo
 {
@@ -13,4 +15,6 @@ public class WebAnalyticsImageInfo
 
     [XmlElement("PersonAge")]
     public string PersonAge { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EIDVPersonEntity")]
 public class EIDVPersonEntity
 {
@@ -58,4 +60,6 @@ public class EIDVPersonEntity
 
     [XmlElement("SSNMatchesMultipleIndividuals")]
     public SSNMatchesMultipleIndividuals SSNMatchesMultipleIndividuals { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SSNInfo")]
 public class SSNInfo
 {
@@ -28,4 +30,6 @@ public class SSNInfo
 
     [XmlElement("SSNExpirationDate")]
     public string SSNExpirationDate { get; set; }
+
+}
 }

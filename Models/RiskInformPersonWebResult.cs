@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskInformPersonWebResult")]
 public class RiskInformPersonWebResult
 {
@@ -10,4 +12,6 @@ public class RiskInformPersonWebResult
 
     [XmlElement("WebRecord")]
     public WebResult WebRecord { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyReportRiskFlagsWithDocguids")]
 public class CompanyReportRiskFlagsWithDocguids
 {
@@ -58,4 +60,6 @@ public class CompanyReportRiskFlagsWithDocguids
 
     [XmlElement("POBoxAddress")]
     public CompanyReportRiskFlagInfo POBoxAddress { get; set; }
+
+}
 }

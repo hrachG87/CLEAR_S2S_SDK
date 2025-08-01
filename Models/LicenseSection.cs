@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LicenseSection")]
 public class LicenseSection
 {
@@ -16,4 +18,6 @@ public class LicenseSection
 
     [XmlElement("CCWLicenseRecord")]
     public List<CCWLicenseRecord> CCWLicenseRecord { get; set; }
+
+}
 }

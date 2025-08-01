@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SSNMatchesMultipleIndividuals")]
 public class SSNMatchesMultipleIndividuals
 {
@@ -16,4 +18,6 @@ public class SSNMatchesMultipleIndividuals
 
     [XmlElement("SSNMatchesMultipleIndividualsDetails")]
     public List<SSNMatchesMultipleIndividualsDetails> SSNMatchesMultipleIndividualsDetails { get; set; }
+
+}
 }

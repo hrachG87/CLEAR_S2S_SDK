@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CurrentCases")]
 public class CurrentCases
 {
@@ -19,4 +21,6 @@ public class CurrentCases
 
     [XmlElement("RelationshipDescription")]
     public string RelationshipDescription { get; set; }
+
+}
 }

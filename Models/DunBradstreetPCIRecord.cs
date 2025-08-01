@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DunBradstreetPCIRecord")]
 public class DunBradstreetPCIRecord
 {
@@ -40,4 +42,6 @@ public class DunBradstreetPCIRecord
 
     [XmlElement("Source")]
     public string Source { get; set; }
+
+}
 }

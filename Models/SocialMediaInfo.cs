@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SocialMediaInfo")]
 public class SocialMediaInfo
 {
@@ -34,4 +36,6 @@ public class SocialMediaInfo
 
     [XmlElement("Following")]
     public int Following { get; set; }
+
+}
 }

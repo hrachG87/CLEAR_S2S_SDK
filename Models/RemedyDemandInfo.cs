@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RemedyDemandInfo")]
 public class RemedyDemandInfo
 {
@@ -13,4 +15,6 @@ public class RemedyDemandInfo
 
     [XmlElement("PlaintiffRemedyPrereq")]
     public string PlaintiffRemedyPrereq { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("GlobalBeneficialOwnershipRelationshipTypes")]
 public class GlobalBeneficialOwnershipRelationshipTypes
 {
@@ -9,7 +11,7 @@ public class GlobalBeneficialOwnershipRelationshipTypes
     public bool Auditor { get; set; }
 
     [XmlElement("Beneficial Owner")]
-    public bool Beneficial Owner { get; set; }
+    public bool BeneficialOwner { get; set; }
 
     [XmlElement("Branch")]
     public bool Branch { get; set; }
@@ -33,22 +35,22 @@ public class GlobalBeneficialOwnershipRelationshipTypes
     public bool Lawyer { get; set; }
 
     [XmlElement("Legal Representative")]
-    public bool Legal Representative { get; set; }
+    public bool LegalRepresentative { get; set; }
 
     [XmlElement("Legal Predecessor")]
-    public bool Legal Predecessor { get; set; }
+    public bool LegalPredecessor { get; set; }
 
     [XmlElement("Legal Successor")]
-    public bool Legal Successor { get; set; }
+    public bool LegalSuccessor { get; set; }
 
     [XmlElement("Linked To")]
-    public bool Linked To { get; set; }
+    public bool LinkedTo { get; set; }
 
     [XmlElement("Liquidator")]
     public bool Liquidator { get; set; }
 
     [XmlElement("Member of the Board")]
-    public bool Member of the Board { get; set; }
+    public bool MemberoftheBoard { get; set; }
 
     [XmlElement("Manager")]
     public bool Manager { get; set; }
@@ -60,7 +62,7 @@ public class GlobalBeneficialOwnershipRelationshipTypes
     public bool Partner { get; set; }
 
     [XmlElement("Registered Agent")]
-    public bool Registered Agent { get; set; }
+    public bool RegisteredAgent { get; set; }
 
     [XmlElement("Shareholder")]
     public bool Shareholder { get; set; }
@@ -73,4 +75,6 @@ public class GlobalBeneficialOwnershipRelationshipTypes
 
     [XmlElement("ShipperReceiver")]
     public bool ShipperReceiver { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("IndexReferences")]
 public class IndexReferences
 {
@@ -40,4 +42,6 @@ public class IndexReferences
 
     [XmlElement("SubstanceTerms")]
     public List<string> SubstanceTerms { get; set; }
+
+}
 }

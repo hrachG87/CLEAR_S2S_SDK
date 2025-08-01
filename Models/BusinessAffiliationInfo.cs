@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessAffiliationInfo")]
 public class BusinessAffiliationInfo
 {
@@ -37,4 +39,6 @@ public class BusinessAffiliationInfo
 
     [XmlElement("YearEstablished")]
     public string YearEstablished { get; set; }
+
+}
 }

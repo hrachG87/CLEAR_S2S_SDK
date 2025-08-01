@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ExpBusCreditSearchCriteria")]
 public class ExpBusCreditSearchCriteria
 {
@@ -16,4 +18,6 @@ public class ExpBusCreditSearchCriteria
 
     [XmlElement("ZipCode")]
     public string ZipCode { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SectionDetails")]
 public class SectionDetails
 {
@@ -244,4 +246,6 @@ public class SectionDetails
 
     [XmlElement("UCCSection")]
     public PersonUCCSection UCCSection { get; set; }
+
+}
 }

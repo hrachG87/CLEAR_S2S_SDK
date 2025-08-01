@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("GlobalBeneficialOwnershipSourceDocumentsRecord")]
 public class GlobalBeneficialOwnershipSourceDocumentsRecord
 {
@@ -31,4 +33,6 @@ public class GlobalBeneficialOwnershipSourceDocumentsRecord
 
     [XmlElement("Relationships")]
     public GlobalBeneficialOwnershipRelationships Relationships { get; set; }
+
+}
 }

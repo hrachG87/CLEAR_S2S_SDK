@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonReportExecutiveAffiliationSection")]
 public class PersonReportExecutiveAffiliationSection
 {
@@ -25,4 +27,6 @@ public class PersonReportExecutiveAffiliationSection
 
     [XmlElement("FederalEmployerIDRecord")]
     public List<FederalEmployerIDRecord> FederalEmployerIDRecord { get; set; }
+
+}
 }

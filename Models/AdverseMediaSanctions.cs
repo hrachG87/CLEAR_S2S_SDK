@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaSanctions")]
 public class AdverseMediaSanctions
 {
@@ -16,4 +18,6 @@ public class AdverseMediaSanctions
 
     [XmlElement("StateOwnedEntities")]
     public bool StateOwnedEntities { get; set; }
+
+}
 }

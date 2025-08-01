@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaUpdateMonitorRequest")]
 public class AdverseMediaUpdateMonitorRequest
 {
@@ -13,4 +15,6 @@ public class AdverseMediaUpdateMonitorRequest
 
     [XmlElement("Criteria")]
     public AdverseMediaUpdateMonitorUserCriteria Criteria { get; set; }
+
+}
 }

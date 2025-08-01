@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DomainAge")]
 public class DomainAge
 {
@@ -13,4 +15,6 @@ public class DomainAge
 
     [XmlElement("ISO")]
     public string ISO { get; set; }
+
+}
 }

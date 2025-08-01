@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ClearReportApiStatus")]
 public class ClearReportApiStatus
 {
@@ -28,4 +30,6 @@ public class ClearReportApiStatus
 
     [XmlElement("TimeStamp")]
     public string TimeStamp { get; set; }
+
+}
 }

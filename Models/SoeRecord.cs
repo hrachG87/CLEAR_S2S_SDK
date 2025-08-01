@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SoeRecord")]
 public class SoeRecord
 {
@@ -91,4 +93,6 @@ public class SoeRecord
 
     [XmlElement("RawAdditionalInfoList")]
     public RawAdditionalInfoList RawAdditionalInfoList { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskInformScoreRecord")]
 public class RiskInformScoreRecord
 {
@@ -28,4 +30,6 @@ public class RiskInformScoreRecord
 
     [XmlElement("Sections")]
     public RIBusinessSearchSections Sections { get; set; }
+
+}
 }

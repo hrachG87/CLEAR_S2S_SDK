@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WebAndSocialMediaAssociateInfo")]
 public class WebAndSocialMediaAssociateInfo
 {
@@ -13,4 +15,6 @@ public class WebAndSocialMediaAssociateInfo
 
     [XmlElement("ValidSince")]
     public string ValidSince { get; set; }
+
+}
 }

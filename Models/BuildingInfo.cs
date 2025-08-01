@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BuildingInfo")]
 public class BuildingInfo
 {
@@ -97,4 +99,6 @@ public class BuildingInfo
 
     [XmlElement("YearBuilt")]
     public string YearBuilt { get; set; }
+
+}
 }

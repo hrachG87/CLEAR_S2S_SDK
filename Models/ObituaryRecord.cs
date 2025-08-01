@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ObituaryRecord")]
 public class ObituaryRecord
 {
@@ -13,4 +15,6 @@ public class ObituaryRecord
 
     [XmlElement("SourceDocumentGuid")]
     public string SourceDocumentGuid { get; set; }
+
+}
 }

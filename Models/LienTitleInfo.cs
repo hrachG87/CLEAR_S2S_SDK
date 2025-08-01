@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LienTitleInfo")]
 public class LienTitleInfo
 {
@@ -28,4 +30,6 @@ public class LienTitleInfo
 
     [XmlElement("LienStatus")]
     public string LienStatus { get; set; }
+
+}
 }

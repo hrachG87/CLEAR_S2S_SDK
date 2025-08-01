@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DriverLicenseSection")]
 public class DriverLicenseSection
 {
@@ -10,4 +12,6 @@ public class DriverLicenseSection
 
     [XmlElement("driverLicenseRecord")]
     public List<DriverLicenseRecord> driverLicenseRecord { get; set; }
+
+}
 }

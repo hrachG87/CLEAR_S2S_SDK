@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskInformPersonSearchCriteria")]
 public class RiskInformPersonSearchCriteria
 {
@@ -22,4 +24,6 @@ public class RiskInformPersonSearchCriteria
 
     [XmlElement("AKAName")]
     public AKAPersonName AKAName { get; set; }
+
+}
 }

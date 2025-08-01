@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessRiskFlagInfo")]
 public class BusinessRiskFlagInfo
 {
@@ -19,4 +21,6 @@ public class BusinessRiskFlagInfo
 
     [XmlElement("DocumentIdentifierInfo")]
     public List<RiskFlagsDocumentIdentifierInfo> DocumentIdentifierInfo { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorpTaxHistory")]
 public class CorpTaxHistory
 {
@@ -31,4 +33,6 @@ public class CorpTaxHistory
 
     [XmlElement("TotalTaxes")]
     public string TotalTaxes { get; set; }
+
+}
 }

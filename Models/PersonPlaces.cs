@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonPlaces")]
 public class PersonPlaces
 {
@@ -13,4 +15,6 @@ public class PersonPlaces
 
     [XmlElement("TotalAdditionalPlaces")]
     public string TotalAdditionalPlaces { get; set; }
+
+}
 }

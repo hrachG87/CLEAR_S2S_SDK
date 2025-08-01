@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Abortion")]
 public class Abortion
 {
@@ -9,7 +11,7 @@ public class Abortion
     public RiskFlagInfo AbortionOnOther { get; set; }
 
     [XmlElement("Abortion On Self")]
-    public RiskFlagInfo Abortion On Self { get; set; }
+    public RiskFlagInfo AbortionOnSelf { get; set; }
 
     [XmlElement("SubmissionToAbortion")]
     public RiskFlagInfo SubmissionToAbortion { get; set; }
@@ -19,4 +21,6 @@ public class Abortion
 
     [XmlElement("AbortionFlag")]
     public RiskFlagInfo AbortionFlag { get; set; }
+
+}
 }

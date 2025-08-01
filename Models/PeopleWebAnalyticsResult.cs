@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PeopleWebAnalyticsResult")]
 public class PeopleWebAnalyticsResult
 {
@@ -19,4 +21,6 @@ public class PeopleWebAnalyticsResult
 
     [XmlElement("Associations")]
     public Associations Associations { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonReportImageInfo")]
 public class PersonReportImageInfo
 {
@@ -10,4 +12,6 @@ public class PersonReportImageInfo
 
     [XmlElement("ContentType")]
     public string ContentType { get; set; }
+
+}
 }

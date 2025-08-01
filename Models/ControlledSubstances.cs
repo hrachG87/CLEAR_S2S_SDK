@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ControlledSubstances")]
 public class ControlledSubstances
 {
@@ -28,4 +30,6 @@ public class ControlledSubstances
 
     [XmlElement("ControlledSubstanceDeliverToMinor")]
     public RiskFlagInfo ControlledSubstanceDeliverToMinor { get; set; }
+
+}
 }

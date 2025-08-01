@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DocketDescription")]
 public class DocketDescription
 {
@@ -46,4 +48,6 @@ public class DocketDescription
 
     [XmlElement("DocketMisc")]
     public string DocketMisc { get; set; }
+
+}
 }

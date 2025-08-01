@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("MDLInfo")]
 public class MDLInfo
 {
@@ -34,4 +36,6 @@ public class MDLInfo
 
     [XmlElement("OriginalDocketNumber")]
     public List<string> OriginalDocketNumber { get; set; }
+
+}
 }

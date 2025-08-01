@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ProLicenseInfo")]
 public class ProLicenseInfo
 {
@@ -175,4 +177,6 @@ public class ProLicenseInfo
 
     [XmlElement("YearLicensed")]
     public string YearLicensed { get; set; }
+
+}
 }

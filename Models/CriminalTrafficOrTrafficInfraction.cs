@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CriminalTrafficOrTrafficInfraction")]
 public class CriminalTrafficOrTrafficInfraction
 {
@@ -31,4 +33,6 @@ public class CriminalTrafficOrTrafficInfraction
 
     [XmlElement("IgnitionTampering")]
     public RiskFlagInfo IgnitionTampering { get; set; }
+
+}
 }

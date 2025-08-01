@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FilingNumberInfo")]
 public class FilingNumberInfo
 {
@@ -13,4 +15,6 @@ public class FilingNumberInfo
 
     [XmlElement("VolumeNumber")]
     public List<string> VolumeNumber { get; set; }
+
+}
 }

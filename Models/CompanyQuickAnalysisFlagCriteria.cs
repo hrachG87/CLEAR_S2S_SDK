@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyQuickAnalysisFlagCriteria")]
 public class CompanyQuickAnalysisFlagCriteria
 {
@@ -13,4 +15,6 @@ public class CompanyQuickAnalysisFlagCriteria
 
     [XmlElement("CompanyRiskFlags")]
     public CompanyQuickAnalysisRiskFlags CompanyRiskFlags { get; set; }
+
+}
 }

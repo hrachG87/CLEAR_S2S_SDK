@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("UCCFilingSummaryDetail")]
 public class UCCFilingSummaryDetail
 {
@@ -22,4 +24,6 @@ public class UCCFilingSummaryDetail
 
     [XmlElement("AmendedOrAssigned")]
     public int AmendedOrAssigned { get; set; }
+
+}
 }

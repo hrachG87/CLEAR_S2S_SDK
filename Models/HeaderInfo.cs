@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("HeaderInfo")]
 public class HeaderInfo
 {
@@ -13,4 +15,6 @@ public class HeaderInfo
 
     [XmlElement("TableData")]
     public List<TableDataInfo> TableData { get; set; }
+
+}
 }

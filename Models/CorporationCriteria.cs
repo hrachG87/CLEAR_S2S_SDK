@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorporationCriteria")]
 public class CorporationCriteria
 {
@@ -19,4 +21,6 @@ public class CorporationCriteria
 
     [XmlElement("DUNSNumber")]
     public string DUNSNumber { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonSearchRequest")]
 public class PersonSearchRequest
 {
@@ -16,4 +18,6 @@ public class PersonSearchRequest
 
     [XmlElement("Datasources")]
     public PersonDatasources Datasources { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DocketProceedings")]
 public class DocketProceedings
 {
@@ -19,4 +21,6 @@ public class DocketProceedings
 
     [XmlElement("DocketPartyInfo")]
     public List<DocketPartyInfo> DocketPartyInfo { get; set; }
+
+}
 }

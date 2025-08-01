@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PhoneUserActivityLowFlagAttributes")]
 public class PhoneUserActivityLowFlagAttributes
 {
@@ -13,4 +15,6 @@ public class PhoneUserActivityLowFlagAttributes
 
     [XmlElement("Value")]
     public string Value { get; set; }
+
+}
 }

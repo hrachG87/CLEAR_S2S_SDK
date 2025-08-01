@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessOverviewRecord")]
 public class BusinessOverviewRecord
 {
@@ -18,7 +20,7 @@ public class BusinessOverviewRecord
     public string TickerSymbol { get; set; }
 
     [XmlElement("StateofIncorporation.")]
-    public List<string> StateofIncorporation. { get; set; }
+    public List<string> StateofIncorporation { get; set; }
 
     [XmlElement("DateofIncorporation")]
     public List<string> DateofIncorporation { get; set; }
@@ -85,4 +87,6 @@ public class BusinessOverviewRecord
 
     [XmlElement("sicdetail")]
     public List<SICDetail> sicdetail { get; set; }
+
+}
 }

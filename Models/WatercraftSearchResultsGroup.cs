@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WatercraftSearchResultsGroup")]
 public class WatercraftSearchResultsGroup
 {
@@ -19,4 +21,6 @@ public class WatercraftSearchResultsGroup
 
     [XmlElement("RecordDetails")]
     public WatercraftRecordDetailsContainer RecordDetails { get; set; }
+
+}
 }

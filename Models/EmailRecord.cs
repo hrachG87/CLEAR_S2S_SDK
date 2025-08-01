@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EmailRecord")]
 public class EmailRecord
 {
@@ -25,4 +27,6 @@ public class EmailRecord
 
     [XmlElement("IPAddress")]
     public string IPAddress { get; set; }
+
+}
 }

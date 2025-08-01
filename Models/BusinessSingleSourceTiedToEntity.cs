@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessSingleSourceTiedToEntity")]
 public class BusinessSingleSourceTiedToEntity
 {
@@ -16,4 +18,6 @@ public class BusinessSingleSourceTiedToEntity
 
     [XmlElement("SingleSourceTiedToEntityDetails")]
     public SingleSourceTiedToEntityDetails SingleSourceTiedToEntityDetails { get; set; }
+
+}
 }

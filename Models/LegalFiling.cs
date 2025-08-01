@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LegalFiling")]
 public class LegalFiling
 {
@@ -28,4 +30,6 @@ public class LegalFiling
 
     [XmlElement("Jurisdiction")]
     public string Jurisdiction { get; set; }
+
+}
 }

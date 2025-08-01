@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("MoneyServiceRecord")]
 public class MoneyServiceRecord
 {
@@ -31,4 +33,6 @@ public class MoneyServiceRecord
 
     [XmlElement("DBAName")]
     public string DBAName { get; set; }
+
+}
 }

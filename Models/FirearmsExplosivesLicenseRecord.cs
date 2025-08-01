@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FirearmsExplosivesLicenseRecord")]
 public class FirearmsExplosivesLicenseRecord
 {
@@ -40,4 +42,6 @@ public class FirearmsExplosivesLicenseRecord
 
     [XmlElement("IRSDistrict")]
     public string IRSDistrict { get; set; }
+
+}
 }

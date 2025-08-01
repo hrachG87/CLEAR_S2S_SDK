@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RIPersonReportSingleRiskIndicatorsRecord")]
 public class RIPersonReportSingleRiskIndicatorsRecord
 {
@@ -13,4 +15,6 @@ public class RIPersonReportSingleRiskIndicatorsRecord
 
     [XmlElement("sriflags")]
     public SingleRiskIndicators sriflags { get; set; }
+
+}
 }

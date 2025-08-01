@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RealPropertyCriteria")]
 public class RealPropertyCriteria
 {
@@ -19,4 +21,6 @@ public class RealPropertyCriteria
 
     [XmlElement("DocGuid")]
     public string DocGuid { get; set; }
+
+}
 }

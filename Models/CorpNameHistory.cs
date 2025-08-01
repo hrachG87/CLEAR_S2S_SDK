@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorpNameHistory")]
 public class CorpNameHistory
 {
@@ -22,4 +24,6 @@ public class CorpNameHistory
 
     [XmlElement("BusinessName")]
     public string BusinessName { get; set; }
+
+}
 }

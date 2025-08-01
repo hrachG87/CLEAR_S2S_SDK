@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CriminalVehicleInfo")]
 public class CriminalVehicleInfo
 {
@@ -22,4 +24,6 @@ public class CriminalVehicleInfo
 
     [XmlElement("VehicleColor")]
     public string VehicleColor { get; set; }
+
+}
 }

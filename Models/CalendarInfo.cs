@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CalendarInfo")]
 public class CalendarInfo
 {
@@ -13,4 +15,6 @@ public class CalendarInfo
 
     [XmlElement("EventLocation")]
     public string EventLocation { get; set; }
+
+}
 }

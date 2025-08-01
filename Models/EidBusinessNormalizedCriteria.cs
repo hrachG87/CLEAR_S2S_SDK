@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EidBusinessNormalizedCriteria")]
 public class EidBusinessNormalizedCriteria
 {
@@ -58,4 +60,6 @@ public class EidBusinessNormalizedCriteria
 
     [XmlElement("NPINumber")]
     public string NPINumber { get; set; }
+
+}
 }

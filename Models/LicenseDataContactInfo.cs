@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LicenseDataContactInfo")]
 public class LicenseDataContactInfo
 {
@@ -13,4 +15,6 @@ public class LicenseDataContactInfo
 
     [XmlElement("ContactWebsiteURL")]
     public string ContactWebsiteURL { get; set; }
+
+}
 }

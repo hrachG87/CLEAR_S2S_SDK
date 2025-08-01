@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DateAndCount")]
 public class DateAndCount
 {
@@ -10,4 +12,6 @@ public class DateAndCount
 
     [XmlElement("Count")]
     public int Count { get; set; }
+
+}
 }

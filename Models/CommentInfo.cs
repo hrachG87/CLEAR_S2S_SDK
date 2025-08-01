@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CommentInfo")]
 public class CommentInfo
 {
@@ -25,4 +27,6 @@ public class CommentInfo
 
     [XmlElement("CommentTitle")]
     public string CommentTitle { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("MedicalProfile")]
 public class MedicalProfile
 {
@@ -136,4 +138,6 @@ public class MedicalProfile
 
     [XmlElement("SANENumber")]
     public string SANENumber { get; set; }
+
+}
 }

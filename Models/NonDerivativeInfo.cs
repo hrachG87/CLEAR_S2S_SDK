@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("NonDerivativeInfo")]
 public class NonDerivativeInfo
 {
@@ -37,4 +39,6 @@ public class NonDerivativeInfo
 
     [XmlElement("ItemPurchasePriceValue")]
     public string ItemPurchasePriceValue { get; set; }
+
+}
 }

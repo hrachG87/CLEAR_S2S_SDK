@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PropertyOwnerRecord")]
 public class PropertyOwnerRecord
 {
@@ -16,4 +18,6 @@ public class PropertyOwnerRecord
 
     [XmlElement("ForeclosureRecord")]
     public List<ForeclosureRecord> ForeclosureRecord { get; set; }
+
+}
 }

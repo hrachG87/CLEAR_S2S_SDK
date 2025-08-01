@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LicenseResponseDetail")]
 public class LicenseResponseDetail
 {
@@ -28,4 +30,6 @@ public class LicenseResponseDetail
 
     [XmlElement("NPIRecord")]
     public List<NPIRecord> NPIRecord { get; set; }
+
+}
 }

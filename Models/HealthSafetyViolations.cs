@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("HealthSafetyViolations")]
 public class HealthSafetyViolations
 {
@@ -39,7 +41,7 @@ public class HealthSafetyViolations
     public RiskFlagInfo LrgCarnivoreLaw { get; set; }
 
     [XmlElement("Dog Law Violation")]
-    public RiskFlagInfo Dog Law Violation { get; set; }
+    public RiskFlagInfo DogLawViolation { get; set; }
 
     [XmlElement("AnimalsAtLarge")]
     public RiskFlagInfo AnimalsAtLarge { get; set; }
@@ -61,4 +63,6 @@ public class HealthSafetyViolations
 
     [XmlElement("PoisonFoodWater")]
     public RiskFlagInfo PoisonFoodWater { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LegalDescription")]
 public class LegalDescription
 {
@@ -13,4 +15,6 @@ public class LegalDescription
 
     [XmlElement("Description3")]
     public string Description3 { get; set; }
+
+}
 }

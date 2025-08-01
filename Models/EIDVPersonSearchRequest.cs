@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EIDVPersonSearchRequest")]
 public class EIDVPersonSearchRequest
 {
@@ -22,4 +24,6 @@ public class EIDVPersonSearchRequest
 
     [XmlElement("EIDVName")]
     public string EIDVName { get; set; }
+
+}
 }

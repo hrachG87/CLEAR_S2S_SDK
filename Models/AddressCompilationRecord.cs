@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AddressCompilationRecord")]
 public class AddressCompilationRecord
 {
@@ -19,4 +21,6 @@ public class AddressCompilationRecord
 
     [XmlElement("SourceDocumentGuid")]
     public string SourceDocumentGuid { get; set; }
+
+}
 }

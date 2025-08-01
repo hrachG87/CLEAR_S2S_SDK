@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RawAdditionalInfo")]
 public class RawAdditionalInfo
 {
@@ -16,4 +18,6 @@ public class RawAdditionalInfo
 
     [XmlElement("Known")]
     public bool Known { get; set; }
+
+}
 }

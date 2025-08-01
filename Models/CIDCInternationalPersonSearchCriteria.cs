@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CIDCInternationalPersonSearchCriteria")]
 public class CIDCInternationalPersonSearchCriteria
 {
@@ -46,4 +48,6 @@ public class CIDCInternationalPersonSearchCriteria
 
     [XmlElement("EmailAddress")]
     public string EmailAddress { get; set; }
+
+}
 }

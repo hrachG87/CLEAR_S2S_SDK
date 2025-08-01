@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaMonitorReportCriteriaContainer")]
 public class AdverseMediaMonitorReportCriteriaContainer
 {
@@ -10,4 +12,6 @@ public class AdverseMediaMonitorReportCriteriaContainer
 
     [XmlElement("ReportOptions")]
     public AdverseMediaMonitorReportOptions ReportOptions { get; set; }
+
+}
 }

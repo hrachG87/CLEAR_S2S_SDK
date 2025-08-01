@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FilingHistoryRecord")]
 public class FilingHistoryRecord
 {
@@ -31,4 +33,6 @@ public class FilingHistoryRecord
 
     [XmlElement("FormerName")]
     public string FormerName { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AssetLiabilityInfo")]
 public class AssetLiabilityInfo
 {
@@ -28,4 +30,6 @@ public class AssetLiabilityInfo
 
     [XmlElement("UnsecuredLiability")]
     public string UnsecuredLiability { get; set; }
+
+}
 }

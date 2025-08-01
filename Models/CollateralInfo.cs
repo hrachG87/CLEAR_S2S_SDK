@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CollateralInfo")]
 public class CollateralInfo
 {
@@ -10,4 +12,6 @@ public class CollateralInfo
 
     [XmlElement("CollateralMachineInfo")]
     public List<CollateralMachineInfo> CollateralMachineInfo { get; set; }
+
+}
 }

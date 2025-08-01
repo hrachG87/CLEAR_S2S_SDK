@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Sanctions")]
 public class Sanctions
 {
@@ -52,4 +54,6 @@ public class Sanctions
 
     [XmlElement("OFACRecord")]
     public RiskFlagInfo OFACRecord { get; set; }
+
+}
 }

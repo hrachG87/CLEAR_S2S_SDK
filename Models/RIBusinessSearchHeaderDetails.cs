@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RIBusinessSearchHeaderDetails")]
 public class RIBusinessSearchHeaderDetails
 {
@@ -13,4 +15,6 @@ public class RIBusinessSearchHeaderDetails
 
     [XmlElement("SectionScore")]
     public string SectionScore { get; set; }
+
+}
 }

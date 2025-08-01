@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaCreateMonitorRequest")]
 public class AdverseMediaCreateMonitorRequest
 {
@@ -16,4 +18,6 @@ public class AdverseMediaCreateMonitorRequest
 
     [XmlElement("AsyncCreate")]
     public bool AsyncCreate { get; set; }
+
+}
 }

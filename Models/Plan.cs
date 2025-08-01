@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Plan")]
 public class Plan
 {
@@ -22,4 +24,6 @@ public class Plan
 
     [XmlElement("TypeOfAuthorizer")]
     public string TypeOfAuthorizer { get; set; }
+
+}
 }

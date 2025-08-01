@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RIBusinessReportCategoryInfo")]
 public class RIBusinessReportCategoryInfo
 {
@@ -10,4 +12,6 @@ public class RIBusinessReportCategoryInfo
 
     [XmlElement("FlagInfo")]
     public List<RIBusinessReportFlagInfo> FlagInfo { get; set; }
+
+}
 }

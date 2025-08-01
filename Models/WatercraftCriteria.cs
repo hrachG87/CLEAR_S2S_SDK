@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WatercraftCriteria")]
 public class WatercraftCriteria
 {
@@ -25,4 +27,6 @@ public class WatercraftCriteria
 
     [XmlElement("DocGuid")]
     public string DocGuid { get; set; }
+
+}
 }

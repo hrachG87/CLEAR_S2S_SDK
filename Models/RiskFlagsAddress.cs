@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskFlagsAddress")]
 public class RiskFlagsAddress
 {
@@ -22,4 +24,6 @@ public class RiskFlagsAddress
 
     [XmlElement("Country")]
     public string Country { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyQuickAnalysisFlagResultsPage")]
 public class CompanyQuickAnalysisFlagResultsPage
 {
@@ -16,4 +18,6 @@ public class CompanyQuickAnalysisFlagResultsPage
 
     [XmlElement("ResultGroup")]
     public List<CompanyQuickAnalysisFlagSearchResultsGroup> ResultGroup { get; set; }
+
+}
 }

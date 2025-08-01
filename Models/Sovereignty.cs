@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Sovereignty")]
 public class Sovereignty
 {
@@ -28,4 +30,6 @@ public class Sovereignty
 
     [XmlElement("DiscloseClassifiedInfo")]
     public RiskFlagInfo DiscloseClassifiedInfo { get; set; }
+
+}
 }

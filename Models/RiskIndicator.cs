@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskIndicator")]
 public class RiskIndicator
 {
@@ -22,4 +24,6 @@ public class RiskIndicator
 
     [XmlElement("Score")]
     public string Score { get; set; }
+
+}
 }

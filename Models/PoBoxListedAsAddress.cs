@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PoBoxListedAsAddress")]
 public class PoBoxListedAsAddress
 {
@@ -16,4 +18,6 @@ public class PoBoxListedAsAddress
 
     [XmlElement("PoBoxListedAsAddressDetails")]
     public List<PoBoxListedAsAddressDetails> PoBoxListedAsAddressDetails { get; set; }
+
+}
 }

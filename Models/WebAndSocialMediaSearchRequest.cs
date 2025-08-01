@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WebAndSocialMediaSearchRequest")]
 public class WebAndSocialMediaSearchRequest
 {
@@ -13,4 +15,6 @@ public class WebAndSocialMediaSearchRequest
 
     [XmlElement("Criteria")]
     public WebAndSocialMediaCriteria Criteria { get; set; }
+
+}
 }

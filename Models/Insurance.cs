@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Insurance")]
 public class Insurance
 {
@@ -16,4 +18,6 @@ public class Insurance
 
     [XmlElement("InsuranceEffectiveDate")]
     public string InsuranceEffectiveDate { get; set; }
+
+}
 }

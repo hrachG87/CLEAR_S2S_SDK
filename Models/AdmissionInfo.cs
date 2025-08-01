@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdmissionInfo")]
 public class AdmissionInfo
 {
@@ -13,4 +15,6 @@ public class AdmissionInfo
 
     [XmlElement("TypeOfAdmission")]
     public string TypeOfAdmission { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("UCCRecord")]
 public class UCCRecord
 {
@@ -16,4 +18,6 @@ public class UCCRecord
 
     [XmlElement("UCCFilingHistory")]
     public List<UCCFilingHistory> UCCFilingHistory { get; set; }
+
+}
 }

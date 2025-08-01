@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonKeyTerms")]
 public class PersonKeyTerms
 {
     [XmlElement("Al-Qaeda")]
-    public bool Al-Qaeda { get; set; }
+    public bool AlQaeda { get; set; }
 
     [XmlElement("Arraignment")]
     public bool Arraignment { get; set; }
@@ -166,4 +168,6 @@ public class PersonKeyTerms
 
     [XmlElement("WhiteCollarCrime")]
     public bool WhiteCollarCrime { get; set; }
+
+}
 }

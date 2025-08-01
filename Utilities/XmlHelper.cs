@@ -1,20 +1,23 @@
 using System.IO;
 using System.Xml.Serialization;
 
-public static class XmlHelper
+namespace BOH.Data.CustomerVerification.CLEARSdk.Utilities
 {
-    public static string Serialize<T>(T obj)
+    public static class XmlHelper
     {
-        var serializer = new XmlSerializer(typeof(T));
-        using var writer = new StringWriter();
-        serializer.Serialize(writer, obj);
-        return writer.ToString();
-    }
+        public static string Serialize<T>(T obj)
+        {
+            var serializer = new XmlSerializer(typeof(T));
+            using var writer = new StringWriter();
+            serializer.Serialize(writer, obj);
+            return writer.ToString();
+        }
 
-    public static T Deserialize<T>(string xml)
-    {
-        var serializer = new XmlSerializer(typeof(T));
-        using var reader = new StringReader(xml);
-        return (T)serializer.Deserialize(reader);
+        public static T Deserialize<T>(string xml)
+        {
+            var serializer = new XmlSerializer(typeof(T));
+            using var reader = new StringReader(xml);
+            return (T)serializer.Deserialize(reader);
+        }
     }
 }

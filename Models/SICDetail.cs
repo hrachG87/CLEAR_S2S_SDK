@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SICDetail")]
 public class SICDetail
 {
@@ -10,4 +12,6 @@ public class SICDetail
 
     [XmlElement("SICDesc")]
     public string SICDesc { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DiscountBondInfo")]
 public class DiscountBondInfo
 {
@@ -19,4 +21,6 @@ public class DiscountBondInfo
 
     [XmlElement("BondCancelDate")]
     public string BondCancelDate { get; set; }
+
+}
 }

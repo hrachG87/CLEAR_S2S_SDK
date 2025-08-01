@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskInformPersonReportOptions")]
 public class RiskInformPersonReportOptions
 {
@@ -61,4 +63,6 @@ public class RiskInformPersonReportOptions
 
     [XmlElement("AssociatePossibleWorldCheckRelatedIndividual")]
     public bool AssociatePossibleWorldCheckRelatedIndividual { get; set; }
+
+}
 }

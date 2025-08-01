@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WeaponOffenses")]
 public class WeaponOffenses
 {
@@ -70,4 +72,6 @@ public class WeaponOffenses
 
     [XmlElement("PossessionOfFirearmDuringFelony")]
     public RiskFlagInfo PossessionOfFirearmDuringFelony { get; set; }
+
+}
 }

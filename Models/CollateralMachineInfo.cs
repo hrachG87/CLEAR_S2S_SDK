@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CollateralMachineInfo")]
 public class CollateralMachineInfo
 {
@@ -34,4 +36,6 @@ public class CollateralMachineInfo
 
     [XmlElement("SerialNumber")]
     public string SerialNumber { get; set; }
+
+}
 }

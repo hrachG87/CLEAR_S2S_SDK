@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessFactsRecord")]
 public class BusinessFactsRecord
 {
@@ -52,4 +54,6 @@ public class BusinessFactsRecord
 
     [XmlElement("NAICSInfos")]
     public NAICSInfos NAICSInfos { get; set; }
+
+}
 }

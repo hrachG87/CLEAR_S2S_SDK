@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Arson")]
 public class Arson
 {
@@ -46,4 +48,6 @@ public class Arson
 
     [XmlElement("ArsonToDefraudInsurer")]
     public RiskFlagInfo ArsonToDefraudInsurer { get; set; }
+
+}
 }

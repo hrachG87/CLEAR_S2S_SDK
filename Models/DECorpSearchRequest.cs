@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DECorpSearchRequest")]
 public class DECorpSearchRequest
 {
@@ -13,4 +15,6 @@ public class DECorpSearchRequest
 
     [XmlElement("Criteria")]
     public DECorpCriteria Criteria { get; set; }
+
+}
 }

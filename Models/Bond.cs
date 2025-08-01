@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Bond")]
 public class Bond
 {
@@ -16,4 +18,6 @@ public class Bond
 
     [XmlElement("InsuranceID")]
     public string InsuranceID { get; set; }
+
+}
 }

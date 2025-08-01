@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CategoryTag")]
 public class CategoryTag
 {
@@ -10,4 +12,6 @@ public class CategoryTag
 
     [XmlElement("ResultCount")]
     public int ResultCount { get; set; }
+
+}
 }

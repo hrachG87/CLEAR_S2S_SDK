@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonEntity")]
 public class PersonEntity
 {
@@ -22,4 +24,6 @@ public class PersonEntity
 
     [XmlElement("Sections")]
     public RIPersonSearchSections Sections { get; set; }
+
+}
 }

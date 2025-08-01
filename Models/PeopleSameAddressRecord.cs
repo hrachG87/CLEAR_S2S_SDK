@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PeopleSameAddressRecord")]
 public class PeopleSameAddressRecord
 {
@@ -13,4 +15,6 @@ public class PeopleSameAddressRecord
 
     [XmlElement("SourcePeopleAddress")]
     public SourcePeopleAddressInfo SourcePeopleAddress { get; set; }
+
+}
 }

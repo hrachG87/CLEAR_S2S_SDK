@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CourtCriteria")]
 public class CourtCriteria
 {
@@ -37,4 +39,6 @@ public class CourtCriteria
 
     [XmlElement("DriverLicenseNumber")]
     public string DriverLicenseNumber { get; set; }
+
+}
 }

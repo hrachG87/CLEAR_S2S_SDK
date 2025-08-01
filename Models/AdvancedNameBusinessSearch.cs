@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdvancedNameBusinessSearch")]
 public class AdvancedNameBusinessSearch
 {
@@ -16,4 +18,6 @@ public class AdvancedNameBusinessSearch
 
     [XmlElement("FirstNameVariationsOption")]
     public bool FirstNameVariationsOption { get; set; }
+
+}
 }

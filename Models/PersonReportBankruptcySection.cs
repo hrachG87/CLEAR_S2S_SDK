@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonReportBankruptcySection")]
 public class PersonReportBankruptcySection
 {
@@ -13,4 +15,6 @@ public class PersonReportBankruptcySection
 
     [XmlElement("SuperiorBankruptcy")]
     public List<SuperiorBankruptcyRecord> SuperiorBankruptcy { get; set; }
+
+}
 }

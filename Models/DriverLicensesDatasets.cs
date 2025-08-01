@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DriverLicensesDatasets")]
 public class DriverLicensesDatasets
 {
@@ -13,4 +15,6 @@ public class DriverLicensesDatasets
 
     [XmlElement("BankAccountHeader")]
     public string BankAccountHeader { get; set; }
+
+}
 }

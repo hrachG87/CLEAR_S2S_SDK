@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskIndicators")]
 public class RiskIndicators
 {
@@ -16,4 +18,6 @@ public class RiskIndicators
 
     [XmlElement("riskRelevantSeverity")]
     public RiskSeverity riskRelevantSeverity { get; set; }
+
+}
 }

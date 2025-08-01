@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ExpBusCreditResultsPage")]
 public class ExpBusCreditResultsPage
 {
@@ -16,4 +18,6 @@ public class ExpBusCreditResultsPage
 
     [XmlElement("ResultGroup")]
     public List<ExpBusCreditSearchResultsGroup> ResultGroup { get; set; }
+
+}
 }

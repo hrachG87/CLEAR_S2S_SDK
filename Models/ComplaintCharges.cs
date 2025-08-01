@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ComplaintCharges")]
 public class ComplaintCharges
 {
@@ -10,4 +12,6 @@ public class ComplaintCharges
 
     [XmlElement("Disposition")]
     public List<CaseDisposition> Disposition { get; set; }
+
+}
 }

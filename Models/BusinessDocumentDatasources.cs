@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessDocumentDatasources")]
 public class BusinessDocumentDatasources
 {
@@ -22,4 +24,6 @@ public class BusinessDocumentDatasources
 
     [XmlElement("NPIRecord")]
     public string NPIRecord { get; set; }
+
+}
 }

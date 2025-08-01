@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("NewsSearchNameCriteria")]
 public class NewsSearchNameCriteria
 {
@@ -13,4 +15,6 @@ public class NewsSearchNameCriteria
 
     [XmlElement("BusinessName")]
     public string BusinessName { get; set; }
+
+}
 }

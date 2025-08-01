@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CourtDataFilingInfo")]
 public class CourtDataFilingInfo
 {
@@ -172,4 +174,6 @@ public class CourtDataFilingInfo
 
     [XmlElement("IRSSerialNumber")]
     public List<string> IRSSerialNumber { get; set; }
+
+}
 }

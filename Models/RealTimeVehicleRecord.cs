@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RealTimeVehicleRecord")]
 public class RealTimeVehicleRecord
 {
@@ -34,4 +36,6 @@ public class RealTimeVehicleRecord
 
     [XmlElement("BrandedInfo3")]
     public BrandedInfo BrandedInfo3 { get; set; }
+
+}
 }

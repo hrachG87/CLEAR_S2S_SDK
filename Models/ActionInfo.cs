@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ActionInfo")]
 public class ActionInfo
 {
@@ -19,4 +21,6 @@ public class ActionInfo
 
     [XmlElement("ActionEndDate")]
     public string ActionEndDate { get; set; }
+
+}
 }

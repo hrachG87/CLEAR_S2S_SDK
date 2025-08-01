@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ProviderTaxonomy")]
 public class ProviderTaxonomy
 {
@@ -25,4 +27,6 @@ public class ProviderTaxonomy
 
     [XmlElement("LicenseState")]
     public string LicenseState { get; set; }
+
+}
 }

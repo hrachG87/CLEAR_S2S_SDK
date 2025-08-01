@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyReportAKAInfo")]
 public class CompanyReportAKAInfo
 {
@@ -9,5 +11,7 @@ public class CompanyReportAKAInfo
     public string NameFirstReported { get; set; }
 
     [XmlElement("Also Known As (AKA) Name")]
-    public PersonName Also Known As (AKA) Name { get; set; }
+    public PersonName AlsoKnownAsAKAName { get; set; }
+
+}
 }

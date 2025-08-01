@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RiskInformBusinessSearchCriteria")]
 public class RiskInformBusinessSearchCriteria
 {
@@ -19,4 +21,6 @@ public class RiskInformBusinessSearchCriteria
 
     [XmlElement("IncludeAdditionalSearches")]
     public RIBusinessSearchIncludeAdditionalSearches IncludeAdditionalSearches { get; set; }
+
+}
 }

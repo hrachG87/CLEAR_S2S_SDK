@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CountAndBalance")]
 public class CountAndBalance
 {
@@ -10,4 +12,6 @@ public class CountAndBalance
 
     [XmlElement("Balance")]
     public int Balance { get; set; }
+
+}
 }

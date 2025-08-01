@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyRealPropertySection")]
 public class CompanyRealPropertySection
 {
@@ -10,4 +12,6 @@ public class CompanyRealPropertySection
 
     [XmlElement("PropertyTaxRecord")]
     public List<PropertyTaxRecord> PropertyTaxRecord { get; set; }
+
+}
 }

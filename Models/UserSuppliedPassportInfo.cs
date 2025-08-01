@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("UserSuppliedPassportInfo")]
 public class UserSuppliedPassportInfo
 {
@@ -28,4 +30,6 @@ public class UserSuppliedPassportInfo
 
     [XmlElement("ExpiryDate")]
     public string ExpiryDate { get; set; }
+
+}
 }

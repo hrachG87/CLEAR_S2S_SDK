@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CriminalCategoryMarijuana")]
 public class CriminalCategoryMarijuana
 {
@@ -15,14 +17,16 @@ public class CriminalCategoryMarijuana
     public CriminalSubcategoryOtherOffense OtherOffense { get; set; }
 
     [XmlElement("Misdemeanor Charge")]
-    public bool Misdemeanor Charge { get; set; }
+    public bool MisdemeanorCharge { get; set; }
 
     [XmlElement("Misdemeanor Conviction")]
-    public bool Misdemeanor Conviction { get; set; }
+    public bool MisdemeanorConviction { get; set; }
 
     [XmlElement("Felony Charge")]
-    public bool Felony Charge { get; set; }
+    public bool FelonyCharge { get; set; }
 
     [XmlElement("Felony Conviction")]
-    public bool Felony Conviction { get; set; }
+    public bool FelonyConviction { get; set; }
+
+}
 }

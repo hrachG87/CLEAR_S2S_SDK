@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("OwnershipInfo")]
 public class OwnershipInfo
 {
@@ -25,4 +27,6 @@ public class OwnershipInfo
 
     [XmlElement("PartialInterestIndicator")]
     public string PartialInterestIndicator { get; set; }
+
+}
 }

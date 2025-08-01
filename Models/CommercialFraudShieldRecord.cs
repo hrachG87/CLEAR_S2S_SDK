@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CommercialFraudShieldRecord")]
 public class CommercialFraudShieldRecord
 {
@@ -34,4 +36,6 @@ public class CommercialFraudShieldRecord
 
     [XmlElement("OFACBusinessWithMatchingCompanyAddress")]
     public Address OFACBusinessWithMatchingCompanyAddress { get; set; }
+
+}
 }

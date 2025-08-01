@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("GlobalBeneficialOwnershipReportSections")]
 public class GlobalBeneficialOwnershipReportSections
 {
@@ -28,4 +30,6 @@ public class GlobalBeneficialOwnershipReportSections
 
     [XmlElement("FcraSection")]
     public FcraSection FcraSection { get; set; }
+
+}
 }

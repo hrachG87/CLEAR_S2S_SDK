@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PepAdditionalInfo")]
 public class PepAdditionalInfo
 {
@@ -55,4 +57,6 @@ public class PepAdditionalInfo
 
     [XmlElement("CountryOfActivity")]
     public string CountryOfActivity { get; set; }
+
+}
 }

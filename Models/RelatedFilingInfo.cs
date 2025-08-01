@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RelatedFilingInfo")]
 public class RelatedFilingInfo
 {
@@ -22,4 +24,6 @@ public class RelatedFilingInfo
 
     [XmlElement("RelatedFilingType")]
     public string RelatedFilingType { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyReportSectionDetails")]
 public class CompanyReportSectionDetails
 {
@@ -178,4 +180,6 @@ public class CompanyReportSectionDetails
 
     [XmlElement("FEINSection")]
     public FEINSection FEINSection { get; set; }
+
+}
 }

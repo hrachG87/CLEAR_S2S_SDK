@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("BusinessRiskRecord")]
 public class BusinessRiskRecord
 {
@@ -13,4 +15,6 @@ public class BusinessRiskRecord
 
     [XmlElement("CustomMessage")]
     public string CustomMessage { get; set; }
+
+}
 }

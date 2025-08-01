@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CompanyAssociateAnalyticsCriteria")]
 public class CompanyAssociateAnalyticsCriteria
 {
@@ -13,4 +15,6 @@ public class CompanyAssociateAnalyticsCriteria
 
     [XmlElement("CompanyRiskFlags")]
     public CompanyAssociateRiskFlags CompanyRiskFlags { get; set; }
+
+}
 }

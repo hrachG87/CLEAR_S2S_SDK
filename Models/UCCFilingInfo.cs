@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("UCCFilingInfo")]
 public class UCCFilingInfo
 {
@@ -31,4 +33,6 @@ public class UCCFilingInfo
 
     [XmlElement("RelatedFilingInfo")]
     public List<RelatedFilingInfo> RelatedFilingInfo { get; set; }
+
+}
 }

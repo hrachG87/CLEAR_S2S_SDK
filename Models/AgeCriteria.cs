@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AgeCriteria")]
 public class AgeCriteria
 {
@@ -13,4 +15,6 @@ public class AgeCriteria
 
     [XmlElement("PersonAgeFrom")]
     public string PersonAgeFrom { get; set; }
+
+}
 }

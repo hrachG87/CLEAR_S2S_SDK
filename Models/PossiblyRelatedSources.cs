@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PossiblyRelatedSources")]
 public class PossiblyRelatedSources
 {
@@ -19,4 +21,6 @@ public class PossiblyRelatedSources
 
     [XmlElement("FriendlyURL")]
     public string FriendlyURL { get; set; }
+
+}
 }

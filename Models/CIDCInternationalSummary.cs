@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CIDCInternationalSummary")]
 public class CIDCInternationalSummary
 {
@@ -49,4 +51,6 @@ public class CIDCInternationalSummary
 
     [XmlElement("EmailAddress")]
     public EidvPersonSearchMatchTypeField EmailAddress { get; set; }
+
+}
 }

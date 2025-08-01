@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RelatedPartiesInfo")]
 public class RelatedPartiesInfo
 {
@@ -13,4 +15,6 @@ public class RelatedPartiesInfo
 
     [XmlElement("RelatedParty")]
     public List<RelatedParty> RelatedParty { get; set; }
+
+}
 }

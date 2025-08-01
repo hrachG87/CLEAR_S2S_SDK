@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("JobInfo")]
 public class JobInfo
 {
@@ -25,4 +27,6 @@ public class JobInfo
 
     [XmlElement("ValidSinceDate")]
     public string ValidSinceDate { get; set; }
+
+}
 }

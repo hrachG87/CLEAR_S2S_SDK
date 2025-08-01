@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ProbationInfo")]
 public class ProbationInfo
 {
@@ -43,4 +45,6 @@ public class ProbationInfo
 
     [XmlElement("TypeOfProbation")]
     public string TypeOfProbation { get; set; }
+
+}
 }

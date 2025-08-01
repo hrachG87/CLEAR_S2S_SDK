@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WorkflowServiceError")]
 public class WorkflowServiceError
 {
@@ -10,4 +12,6 @@ public class WorkflowServiceError
 
     [XmlElement("ErrorMsg")]
     public string ErrorMsg { get; set; }
+
+}
 }

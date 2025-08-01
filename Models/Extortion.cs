@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Extortion")]
 public class Extortion
 {
@@ -22,4 +24,6 @@ public class Extortion
 
     [XmlElement("ExtortionFlag")]
     public RiskFlagInfo ExtortionFlag { get; set; }
+
+}
 }

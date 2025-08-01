@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Subjudgments")]
 public class Subjudgments
 {
@@ -19,4 +21,6 @@ public class Subjudgments
 
     [XmlElement("Creditor")]
     public List<Creditor> Creditor { get; set; }
+
+}
 }

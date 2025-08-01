@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SecondarySICInfo")]
 public class SecondarySICInfo
 {
@@ -10,4 +12,6 @@ public class SecondarySICInfo
 
     [XmlElement("SecondarySICDescription")]
     public string SecondarySICDescription { get; set; }
+
+}
 }

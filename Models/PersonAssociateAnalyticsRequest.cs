@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonAssociateAnalyticsRequest")]
 public class PersonAssociateAnalyticsRequest
 {
@@ -13,4 +15,6 @@ public class PersonAssociateAnalyticsRequest
 
     [XmlElement("Criteria")]
     public PersonAssociateAnalyticsUserCriteria Criteria { get; set; }
+
+}
 }

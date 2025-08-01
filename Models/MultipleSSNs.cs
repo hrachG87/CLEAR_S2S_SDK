@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("MultipleSSNs")]
 public class MultipleSSNs
 {
@@ -16,4 +18,6 @@ public class MultipleSSNs
 
     [XmlElement("MultipleSSNdetails")]
     public List<MultipleSSNsDetails> MultipleSSNdetails { get; set; }
+
+}
 }

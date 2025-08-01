@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DECorpResults")]
 public class DECorpResults
 {
@@ -13,4 +15,6 @@ public class DECorpResults
 
     [XmlElement("GroupCount")]
     public int GroupCount { get; set; }
+
+}
 }

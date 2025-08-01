@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonDocumentDominantValues")]
 public class PersonDocumentDominantValues
 {
@@ -19,4 +21,6 @@ public class PersonDocumentDominantValues
 
     [XmlElement("ReportedDate")]
     public string ReportedDate { get; set; }
+
+}
 }

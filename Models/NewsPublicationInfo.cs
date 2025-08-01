@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("NewsPublicationInfo")]
 public class NewsPublicationInfo
 {
@@ -16,4 +18,6 @@ public class NewsPublicationInfo
 
     [XmlElement("WordCount")]
     public string WordCount { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RealTimeArrestRecord")]
 public class RealTimeArrestRecord
 {
@@ -31,4 +33,6 @@ public class RealTimeArrestRecord
 
     [XmlElement("PhotoURL")]
     public List<string> PhotoURL { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SourceInfo")]
 public class SourceInfo
 {
@@ -13,4 +15,6 @@ public class SourceInfo
 
     [XmlElement("LastReportedDate")]
     public List<string> LastReportedDate { get; set; }
+
+}
 }

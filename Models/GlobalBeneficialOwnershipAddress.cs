@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("GlobalBeneficialOwnershipAddress")]
 public class GlobalBeneficialOwnershipAddress
 {
@@ -118,4 +120,6 @@ public class GlobalBeneficialOwnershipAddress
 
     [XmlElement("POBox")]
     public string POBox { get; set; }
+
+}
 }

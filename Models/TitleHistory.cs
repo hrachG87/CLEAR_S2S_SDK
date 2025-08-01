@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("TitleHistory")]
 public class TitleHistory
 {
@@ -13,4 +15,6 @@ public class TitleHistory
 
     [XmlElement("TitleNumber")]
     public string TitleNumber { get; set; }
+
+}
 }

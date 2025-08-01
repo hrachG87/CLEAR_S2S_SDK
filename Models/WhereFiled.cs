@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WhereFiled")]
 public class WhereFiled
 {
@@ -13,4 +15,6 @@ public class WhereFiled
 
     [XmlElement("FilingState")]
     public string FilingState { get; set; }
+
+}
 }

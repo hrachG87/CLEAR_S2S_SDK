@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LienInfo")]
 public class LienInfo
 {
@@ -55,4 +57,6 @@ public class LienInfo
 
     [XmlElement("SubjudgmentInfo")]
     public SubjudgmentInfo SubjudgmentInfo { get; set; }
+
+}
 }

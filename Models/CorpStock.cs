@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorpStock")]
 public class CorpStock
 {
@@ -28,4 +30,6 @@ public class CorpStock
 
     [XmlElement("VotingRights")]
     public string VotingRights { get; set; }
+
+}
 }

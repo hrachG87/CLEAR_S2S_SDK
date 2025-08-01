@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PermissiblePurpose")]
 public class PermissiblePurpose
 {
@@ -13,4 +15,6 @@ public class PermissiblePurpose
 
     [XmlElement("VOTER")]
     public string VOTER { get; set; }
+
+}
 }

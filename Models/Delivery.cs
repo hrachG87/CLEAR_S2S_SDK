@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Delivery")]
 public class Delivery
 {
@@ -13,4 +15,6 @@ public class Delivery
 
     [XmlElement("EmailAddresses")]
     public EmailAddresses EmailAddresses { get; set; }
+
+}
 }

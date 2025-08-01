@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("RIBusinessSearchSectionDetails")]
 public class RIBusinessSearchSectionDetails
 {
@@ -25,4 +27,6 @@ public class RIBusinessSearchSectionDetails
 
     [XmlElement("WebAnalytics")]
     public WebAnalytics WebAnalytics { get; set; }
+
+}
 }

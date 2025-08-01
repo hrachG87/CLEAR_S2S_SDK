@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonWebAnalyticsSection")]
 public class PersonWebAnalyticsSection
 {
@@ -13,4 +15,6 @@ public class PersonWebAnalyticsSection
 
     [XmlElement("WebRecord")]
     public List<WebResult> WebRecord { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ReportSummaryRecord")]
 public class ReportSummaryRecord
 {
@@ -16,4 +18,6 @@ public class ReportSummaryRecord
 
     [XmlElement("SearchInquiry")]
     public string SearchInquiry { get; set; }
+
+}
 }

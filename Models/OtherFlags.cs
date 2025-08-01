@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("OtherFlags")]
 public class OtherFlags
 {
@@ -61,4 +63,6 @@ public class OtherFlags
 
     [XmlElement("UCCFilings")]
     public PersonUCCFilings UCCFilings { get; set; }
+
+}
 }

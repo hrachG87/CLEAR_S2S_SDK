@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CorporateLinkageDetail")]
 public class CorporateLinkageDetail
 {
@@ -13,4 +15,6 @@ public class CorporateLinkageDetail
 
     [XmlElement("BIN")]
     public string BIN { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("CIDCInternationalPersonSearchRequest")]
 public class CIDCInternationalPersonSearchRequest
 {
@@ -28,4 +30,6 @@ public class CIDCInternationalPersonSearchRequest
 
     [XmlElement("CIDCVersion")]
     public string CIDCVersion { get; set; }
+
+}
 }

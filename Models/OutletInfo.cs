@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("OutletInfo")]
 public class OutletInfo
 {
@@ -28,4 +30,6 @@ public class OutletInfo
 
     [XmlElement("OutletSicCode")]
     public string OutletSicCode { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaSanctionsResults")]
 public class AdverseMediaSanctionsResults
 {
@@ -46,4 +48,6 @@ public class AdverseMediaSanctionsResults
 
     [XmlElement("SanctionGroupCode")]
     public string SanctionGroupCode { get; set; }
+
+}
 }

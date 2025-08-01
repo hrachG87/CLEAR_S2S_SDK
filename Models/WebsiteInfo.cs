@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("WebsiteInfo")]
 public class WebsiteInfo
 {
@@ -10,4 +12,6 @@ public class WebsiteInfo
 
     [XmlElement("URL")]
     public string URL { get; set; }
+
+}
 }

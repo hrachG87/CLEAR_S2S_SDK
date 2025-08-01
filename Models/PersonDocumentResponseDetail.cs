@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PersonDocumentResponseDetail")]
 public class PersonDocumentResponseDetail
 {
@@ -64,4 +66,6 @@ public class PersonDocumentResponseDetail
 
     [XmlElement("NPIRecord")]
     public List<NPIRecord> NPIRecord { get; set; }
+
+}
 }

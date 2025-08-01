@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PhoneResponseDetail")]
 public class PhoneResponseDetail
 {
@@ -55,4 +57,6 @@ public class PhoneResponseDetail
 
     [XmlElement("PhoneAttributesRecord")]
     public List<PhoneAttributes> PhoneAttributesRecord { get; set; }
+
+}
 }

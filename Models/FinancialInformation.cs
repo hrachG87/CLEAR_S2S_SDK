@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FinancialInformation")]
 public class FinancialInformation
 {
@@ -25,4 +27,6 @@ public class FinancialInformation
 
     [XmlElement("ExchangeRate")]
     public string ExchangeRate { get; set; }
+
+}
 }

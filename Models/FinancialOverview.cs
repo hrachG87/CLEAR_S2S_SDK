@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FinancialOverview")]
 public class FinancialOverview
 {
@@ -25,4 +27,6 @@ public class FinancialOverview
 
     [XmlElement("AccountantOpinion")]
     public List<string> AccountantOpinion { get; set; }
+
+}
 }

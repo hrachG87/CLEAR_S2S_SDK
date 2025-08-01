@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ValueAndLabelSet")]
 public class ValueAndLabelSet
 {
@@ -16,4 +18,6 @@ public class ValueAndLabelSet
 
     [XmlElement("FieldStringValue")]
     public string FieldStringValue { get; set; }
+
+}
 }

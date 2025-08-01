@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("FilingOfficeStmt")]
 public class FilingOfficeStmt
 {
@@ -16,4 +18,6 @@ public class FilingOfficeStmt
 
     [XmlElement("InaccuracyStmt")]
     public string InaccuracyStmt { get; set; }
+
+}
 }

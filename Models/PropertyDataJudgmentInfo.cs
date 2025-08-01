@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PropertyDataJudgmentInfo")]
 public class PropertyDataJudgmentInfo
 {
@@ -19,4 +21,6 @@ public class PropertyDataJudgmentInfo
 
     [XmlElement("CaseFiling")]
     public PropertyDataCaseFiling CaseFiling { get; set; }
+
+}
 }

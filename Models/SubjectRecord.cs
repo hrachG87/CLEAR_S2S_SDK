@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SubjectRecord")]
 public class SubjectRecord
 {
@@ -34,4 +36,6 @@ public class SubjectRecord
 
     [XmlElement("TREntityId")]
     public List<string> TREntityId { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("MonthlyPaymentDetail")]
 public class MonthlyPaymentDetail
 {
@@ -16,4 +18,6 @@ public class MonthlyPaymentDetail
 
     [XmlElement("DBTPaymentDetail")]
     public DBTPaymentDetail DBTPaymentDetail { get; set; }
+
+}
 }

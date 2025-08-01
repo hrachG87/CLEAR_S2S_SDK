@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DamageProperty")]
 public class DamageProperty
 {
@@ -40,4 +42,6 @@ public class DamageProperty
 
     [XmlElement("DamageComputerIntroduceContaminant")]
     public RiskFlagInfo DamageComputerIntroduceContaminant { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("AdverseMediaPepResults")]
 public class AdverseMediaPepResults
 {
@@ -40,4 +42,6 @@ public class AdverseMediaPepResults
 
     [XmlElement("RawAdditionalInfoList")]
     public RawAdditionalInfoList RawAdditionalInfoList { get; set; }
+
+}
 }

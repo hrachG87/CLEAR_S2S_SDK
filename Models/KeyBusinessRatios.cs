@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("KeyBusinessRatios")]
 public class KeyBusinessRatios
 {
@@ -13,4 +15,6 @@ public class KeyBusinessRatios
 
     [XmlElement("Notes")]
     public BusinessNoteInfo Notes { get; set; }
+
+}
 }

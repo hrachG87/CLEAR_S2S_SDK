@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ArticleSnippet")]
 public class ArticleSnippet
 {
@@ -16,4 +18,6 @@ public class ArticleSnippet
 
     [XmlElement("LeadParagraph")]
     public string LeadParagraph { get; set; }
+
+}
 }

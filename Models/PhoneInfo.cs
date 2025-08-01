@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("PhoneInfo")]
 public class PhoneInfo
 {
@@ -40,4 +42,6 @@ public class PhoneInfo
 
     [XmlElement("MatchToSubjectsPhoneNumber")]
     public bool MatchToSubjectsPhoneNumber { get; set; }
+
+}
 }

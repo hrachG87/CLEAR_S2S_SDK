@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("Header")]
 public class Header
 {
@@ -37,4 +39,6 @@ public class Header
 
     [XmlElement("WebAnalytics")]
     public RIBusinessSearchHeaderDetails WebAnalytics { get; set; }
+
+}
 }

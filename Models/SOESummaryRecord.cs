@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SOESummaryRecord")]
 public class SOESummaryRecord
 {
@@ -19,4 +21,6 @@ public class SOESummaryRecord
 
     [XmlElement("Relevance")]
     public string Relevance { get; set; }
+
+}
 }

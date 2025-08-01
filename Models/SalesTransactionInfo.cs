@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("SalesTransactionInfo")]
 public class SalesTransactionInfo
 {
@@ -82,4 +84,6 @@ public class SalesTransactionInfo
 
     [XmlElement("TypeOfTransaction")]
     public string TypeOfTransaction { get; set; }
+
+}
 }

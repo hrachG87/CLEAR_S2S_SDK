@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("EidvBusinessSearchMatchTypeField")]
 public class EidvBusinessSearchMatchTypeField
 {
@@ -13,4 +15,6 @@ public class EidvBusinessSearchMatchTypeField
 
     [XmlElement("matchscore")]
     public string matchscore { get; set; }
+
+}
 }

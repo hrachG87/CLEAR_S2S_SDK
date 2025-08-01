@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("ReversePhoneRecord")]
 public class ReversePhoneRecord
 {
@@ -109,4 +111,6 @@ public class ReversePhoneRecord
 
     [XmlElement("PVSDStatusCodeValue")]
     public string PVSDStatusCodeValue { get; set; }
+
+}
 }

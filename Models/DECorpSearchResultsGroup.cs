@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("DECorpSearchResultsGroup")]
 public class DECorpSearchResultsGroup
 {
@@ -16,4 +18,6 @@ public class DECorpSearchResultsGroup
 
     [XmlElement("RecordDetails")]
     public DECorpResponseDetailContainer RecordDetails { get; set; }
+
+}
 }

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("LicenseRealEstateInfo")]
 public class LicenseRealEstateInfo
 {
@@ -55,4 +57,6 @@ public class LicenseRealEstateInfo
 
     [XmlElement("TypeOfRecord")]
     public string TypeOfRecord { get; set; }
+
+}
 }

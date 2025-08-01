@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
+namespace BOH.Data.CustomerVerification.CLEARSdk.Models
+{
 [XmlRoot("InvolvedAttorney")]
 public class InvolvedAttorney
 {
@@ -19,4 +21,6 @@ public class InvolvedAttorney
 
     [XmlElement("Status")]
     public CourtStatus Status { get; set; }
+
+}
 }
